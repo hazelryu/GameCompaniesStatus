@@ -46,22 +46,7 @@
         <span class="scrubber-value" id="rankDateValue">2026-07-14</span>
       </div>
       <select id="rankDateSelect" aria-label="날짜 선택"></select>
-      <p class="rank-note">주간 예약 작업이 매주 스냅샷을 추가합니다. 이번 회차는 확장된 컬럼(장르·출시연도·누적매출·MAU)의 첫 수집이라 순위변동·신규진입 표시는 다음 회차부터 나타납니다.</p>
-    </div>
-
-    <div class="rank-tables">
-      <div class="rank-table-wrap">
-        <h3>App Store 코리아 <span class="rank-badge">매출 Top 50</span></h3>
-        <div class="table-scroll">
-          <table id="asTable"><thead><tr><th class="num">#</th><th>타이틀</th><th>퍼블리셔</th><th>장르</th><th class="num">연도</th><th class="num">월매출</th><th>누적매출</th><th>MAU</th></tr></thead><tbody></tbody></table>
-        </div>
-      </div>
-      <div class="rank-table-wrap">
-        <h3>Google Play 코리아 <span class="rank-badge">매출 Top 50</span></h3>
-        <div class="table-scroll">
-          <table id="gpTable"><thead><tr><th class="num">#</th><th>타이틀</th><th>퍼블리셔</th><th>장르</th><th class="num">연도</th><th class="num">월매출</th><th>누적매출</th><th>MAU</th></tr></thead><tbody></tbody></table>
-        </div>
-      </div>
+      <p class="rank-note">기준 스냅샷: 2026-07-13(1~20위, 기존 컬럼) → 2026-07-14(전체, 확장 컬럼). <b class="hl-new-swatch">노란 강조</b>는 2026년 출시 신작이거나 지난 스냅샷에 없던 신규 Top20 진입작입니다 — 특정 회사 소속 여부와는 무관합니다. 21위 밖 타이틀은 이번이 첫 수집이라 순위변동을 비교할 기준이 없어 "최초수집"으로 표시됩니다.</p>
     </div>
 
     <div class="onestore-block">
@@ -69,7 +54,22 @@
       <ul class="onestore-list" id="onestoreList"></ul>
     </div>
 
-    <p class="rank-legend">† 표시는 최신 월매출이 아닌 과거 시점·회사 전체·추정 평균 등 참고용 수치입니다 (셀에 마우스를 올리면 설명이 보입니다). 매출·누적매출·MAU는 모두 MobileIndex/Sensor Tower/Apple 공식 스토어 메타데이터 등을 인용한 추정치이며 공식 공시가 아닙니다. 100위까지는 무료 소스로 확인 불가하여 App Store·Google Play 각 50위까지만 수록했습니다.</p>
+    <div class="rank-tables">
+      <div class="rank-table-wrap">
+        <h3>App Store 코리아 <span class="rank-badge">매출 Top 50</span></h3>
+        <div class="table-scroll">
+          <table id="asTable"><thead><tr><th class="num">#</th><th class="num">변동</th><th>타이틀</th><th>퍼블리셔</th><th>장르</th><th class="num">연도</th><th class="num">월매출</th><th>누적매출</th><th>MAU</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+      <div class="rank-table-wrap">
+        <h3>Google Play 코리아 <span class="rank-badge">매출 Top 50</span></h3>
+        <div class="table-scroll">
+          <table id="gpTable"><thead><tr><th class="num">#</th><th class="num">변동</th><th>타이틀</th><th>퍼블리셔</th><th>장르</th><th class="num">연도</th><th class="num">월매출</th><th>누적매출</th><th>MAU</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+    </div>
+
+    <p class="rank-legend">† 표시는 최신 월매출이 아닌 과거 시점·회사 전체·추정 평균 등 참고용 수치입니다 (셀에 마우스를 올리면 설명이 보입니다). 매출·누적매출·MAU는 모두 MobileIndex/Sensor Tower/Apple 공식 스토어 메타데이터 등을 인용한 추정치이며 공식 공시가 아닙니다. 100위까지는 무료 소스로 확인 불가하여 App Store·Google Play 각 50위까지만 수록했습니다 (계속 확장 시도 중).</p>
   </section>
 
   <section id="panelPc" class="panel" hidden role="tabpanel" aria-labelledby="tabBtnPc">
@@ -226,10 +226,18 @@
   tbody tr:last-child td{border-bottom:none;}
   tbody tr.hl{background:var(--accent-wash);}
   tbody tr.hl td{color:var(--ink); font-weight:600;}
+  tbody tr.hl-new{background:var(--gold-wash);}
+  tbody tr.hl-new td{color:var(--ink);}
   .row-dot{display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:6px; flex:none;}
   .no-data{color:var(--muted); font-weight:400;}
   .stale-mark{color:var(--muted); cursor:help;}
   .rank-legend{font-size:11px; color:var(--muted); margin:10px 2px 0;}
+  .hl-new-swatch{background:var(--gold-wash); color:var(--gold); border-radius:4px; padding:0 4px; font-style:normal;}
+  .rank-up{color:var(--good); font-weight:600; white-space:nowrap;}
+  .rank-down{color:var(--bad); font-weight:600; white-space:nowrap;}
+  .rank-flat{color:var(--muted); white-space:nowrap;}
+  .rank-new{color:var(--gold); font-weight:700; white-space:nowrap;}
+  .rank-unk{color:var(--muted); font-size:10.5px; white-space:nowrap;}
 
   .onestore-block{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:12px;}
   .onestore-block h3{font-size:14px; margin-bottom:8px;}
@@ -484,6 +492,38 @@
     ["-","뮤 모나크2","Webzen Inc.","MMORPG","2024","","","","webzen"]
   ];
 
+  // Only prior baseline we have: the very first snapshot (2026-07-13), Top20 only, per store.
+  var PREV_SNAPSHOT = {
+    app_store: {"Pokémon GO":1,"배틀그라운드 모바일":2,"WOS":3,"메이플 키우기":4,"킹샷":5,"가십하버":6,"컴투스프로야구V26":7,"냥코 대전쟁":8,"로얄 매치":9,"운빨존많겜":10,"리니지M":11,"EA SPORTS FC Online M":12,"명조":13,"Gardenscapes":14,"승리의 여신":15,"테이스티 트레블":16,"FC 모바일":17,"씨사이드 익스케이프":18,"협타디":19,"마비노기 모바일":20},
+    google_play: {"오딘":1,"SOL":2,"Pokémon GO":3,"WOS":4,"킹샷":5,"승리의 여신":6,"명조":7,"리니지M":8,"라스트 워":9,"메이플 키우기":10,"로얄 매치":11,"가십하버":12,"로블록스":13,"삼국지":14,"한게임포커 클래식":15,"이환":16,"냥코 대전쟁":17,"배틀그라운드 모바일":18,"마비노기 모바일":19,"운빨존많겜":20}
+  };
+  var PREV_DATE = "2026-07-13";
+
+  function normTitle(t){
+    return t.replace(/\(.*?\)/g,"").split(":")[0].split("™")[0].trim();
+  }
+
+  function rankChangeCell(store, title, rank, year){
+    var isNewRelease = (year === "2026");
+    if(rank === "-" || rank === undefined){
+      return { html: '<span class="rank-unk">순위 미확인</span>', isNew: isNewRelease };
+    }
+    var prevMap = PREV_SNAPSHOT[store] || {};
+    var prevRank = prevMap[normTitle(title)];
+    if(prevRank !== undefined){
+      var d = prevRank - rank;
+      var html;
+      if(d > 0) html = '<span class="rank-up">▲'+d+'</span>';
+      else if(d < 0) html = '<span class="rank-down">▼'+(-d)+'</span>';
+      else html = '<span class="rank-flat">–</span>';
+      return { html: html, isNew: isNewRelease };
+    }
+    if(rank <= 20){
+      return { html: '<span class="rank-new">신규</span>', isNew: true };
+    }
+    return { html: '<span class="rank-unk">최초수집</span>', isNew: isNewRelease };
+  }
+
   var ONESTORE = [
     { title:"창세기전 모바일", pub:"LINE Games (개발: Meerkat Games)", date:"2026-07-08", note:"2.5주년 업데이트 후 매출 1위 (과거 2026-01-14, 2025-07-09 등 반복 달성)" },
     { title:"아스텔리아M", pub:"세시소프트", date:"2025-10-22", note:"출시 8일 만에 매출 1위, 구글플레이 인기 1위(3일)도 동시 달성" }
@@ -676,13 +716,14 @@
     return v;
   }
 
-  function renderRankTable(tbodyId, rows){
+  function renderRankTable(tbodyId, rows, store){
     var tbody = document.querySelector("#"+tbodyId+" tbody");
     tbody.innerHTML = rows.map(function(r){
       var rank=r[0], title=r[1], pub=r[2], genre=r[3], year=r[4], monthly=r[5], cum=r[6], mau=r[7], cid=r[8];
-      var cls = cid ? "hl" : "";
-      var dot = cid ? '<span class="row-dot" style="background:var('+COLOR_MAP[cid]+')"></span>' : "";
-      return '<tr class="'+cls+'"><td class="num">'+rank+'</td><td>'+dot+title+'</td><td>'+pub+'</td><td>'+cell(genre)+'</td><td class="num">'+cell(year)+'</td><td class="num">'+monthlyCell(monthly)+'</td><td>'+cell(cum)+'</td><td>'+cell(mau)+'</td></tr>';
+      var rc = rankChangeCell(store, title, rank, year);
+      var cls = rc.isNew ? "hl-new" : "";
+      var dot = cid ? '<span class="row-dot" style="background:var('+COLOR_MAP[cid]+')" title="추적 대상 게임사"></span>' : "";
+      return '<tr class="'+cls+'"><td class="num">'+rank+'</td><td class="num">'+rc.html+'</td><td>'+dot+title+'</td><td>'+pub+'</td><td>'+cell(genre)+'</td><td class="num">'+cell(year)+'</td><td class="num">'+monthlyCell(monthly)+'</td><td>'+cell(cum)+'</td><td>'+cell(mau)+'</td></tr>';
     }).join("");
   }
 
@@ -722,8 +763,8 @@
   renderTicks();
   updateScrub(8);
   renderUnlistedGrid();
-  renderRankTable("asTable", AS_TOP50);
-  renderRankTable("gpTable", GP_TOP51);
+  renderRankTable("asTable", AS_TOP50, "app_store");
+  renderRankTable("gpTable", GP_TOP51, "google_play");
   renderOnestore();
   renderGametrics();
   renderSteamKr();
