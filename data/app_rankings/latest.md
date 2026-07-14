@@ -1,7 +1,7 @@
 # 한국 모바일게임 매출 순위
 
 > 기준: App Store 2026-07-14 11:43 KST · Google Play 2026-07-14 12:03 KST (MobileIndex 실시간 매출 순위, IGAWorks 추정 데이터)
-> 무료 소스 한계로 100위까지는 확인 불가 — **App Store 1~50위, Google Play 1~51위**까지 검증된 데이터로 구성. 존재하지 않는 순위는 만들어내지 않았습니다.
+> 무료 소스 한계로 100위까지는 확인 불가 — **App Store·Google Play 각 1~50위**까지 검증된 데이터로 구성 (Google Play는 순위 미확인 5개 타이틀 포함 총 50개). 존재하지 않는 순위는 만들어내지 않았습니다.
 > 월매출은 2026년 5월 MobileIndex 월간 차트(IGAWorks 블로그 인용, 상위 5개 타이틀만 공개)에서 확인된 것만 표기. 누적매출/MAU는 개별 공개 출처가 있는 경우만 표기, 나머지는 "—".
 > 이 파일은 주간 예약 작업으로 갱신되며, 누적 이력은 [history.csv](history.csv) 참고. 원스토어는 [onestore.md](onestore.md) 별도 참고.
 
@@ -62,7 +62,7 @@
 
 † 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님 — 이후 순위 하락으로 현재와 다를 수 있음)
 
-## Google Play 코리아 Top 51 (매출)
+## Google Play 코리아 Top 50 (매출) — 순위 확인분 45개 + 순위 미확인 5개
 
 | 순위 | 타이틀 | 퍼블리셔 | 장르 | 출시연도 | 월매출(억원) | 누적매출 | MAU |
 |---|---|---|---|---|---|---|---|
@@ -120,21 +120,21 @@
 † 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님)
 
 ## 순위 변동 및 신규진입 표시 관련 안내
-이번 갱신부터 Top50/51 스냅샷 수집을 시작했습니다. **순위변동(▲▼)과 신규진입 하이라이트는 다음 갱신(주간)부터 이전 스냅샷과 비교하여 표시됩니다** — 이번 회차는 비교 기준점(baseline)입니다.
+이번 갱신부터 Top50 스냅샷 수집을 시작했습니다. **순위변동(▲▼)과 신규진입 하이라이트는 다음 갱신(주간)부터 이전 스냅샷과 비교하여 표시됩니다** — 이번 회차는 비교 기준점(baseline)입니다.
 
-## 관심 15개사 진입 현황 (Top50/51 기준)
+## 관심 15개사 진입 현황 (Top50 기준)
 - **Kakao Games** — 오딘: 발할라 라이징 (GP 1위 / AS 27위)
 - **NCSOFT** — 리니지M(GP 9위/AS 11·46위), 리니지W(GP 30위), AION2(GP 39위)
 - **Nexon** — 메이플 키우기, 마비노기 모바일, FC 모바일, EA SPORTS FC Online M (양대마켓 다수)
 - **Krafton** — 배틀그라운드 모바일 (GP 18위 / AS 5위)
-- **Devsisters·LINE Games·Smilegate** — Top50/51 밖 (미진입)
+- **Devsisters·LINE Games·Smilegate** — Top50 밖 (미진입)
 - **Haegin** — 드래곤빌리지3 (Highbrow 계열, GP 45위 / AS 26위)
 - **Com2uS** — 컴투스프로야구V26 (GP 29위 / AS 7위)
 - **Netmarble** — SOL: enchant, 몬길: STAR DIVE, 뱀피르, 세븐나이츠 리버스 (다수 진입)
 - **NHN** — 한게임포커 클래식·한게임 섯다&맞고·한게임 포커·한게임 로얄홀덤 (웹보드 다수 진입)
 - **Neowiz** — 피망 포커 (GP 40위)
 - **Webzen** — 뮤 모나크2 (GP 기타)
-- **Pearl Abyss·Wemade·Shiftup** — Top50/51 밖 (미진입; 니케는 Level Infinite 퍼블리싱으로 진입하나 Shift Up 매출 직접귀속과는 별개 표기)
+- **Pearl Abyss·Wemade·Shiftup** — Top50 밖 (미진입; 니케는 Level Infinite 퍼블리싱으로 진입하나 Shift Up 매출 직접귀속과는 별개 표기)
 
 ## 출처
 - MobileIndex 실시간 순위: https://game.mobileindex.com/chart/real
