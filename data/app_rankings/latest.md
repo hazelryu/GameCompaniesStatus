@@ -1,11 +1,12 @@
 # 한국 모바일게임 매출 순위
 
-> 기준: App Store 2026-07-14 11:43 KST · Google Play 2026-07-14 12:03 KST (MobileIndex 실시간 매출 순위, IGAWorks 추정 데이터)
-> 무료 소스 한계로 100위까지는 확인 불가 — **App Store·Google Play 각 1~50위**까지 검증된 데이터로 구성 (Google Play는 순위 미확인 5개 타이틀 포함 총 50개). 존재하지 않는 순위는 만들어내지 않았습니다.
-> 월매출은 2026년 5월 MobileIndex 월간 차트(IGAWorks 블로그 인용, 상위 5개 타이틀만 공개)에서 확인된 것만 표기. 누적매출/MAU는 개별 공개 출처가 있는 경우만 표기, 나머지는 "—".
+> 기준: App Store 2026-07-14 (1~50위 11:43 KST / 51~100위 14:23 KST, 모두 MobileIndex 실시간 매출 순위) · Google Play 2026-07-14 (1~50위 12:03 KST MobileIndex / 51~100위 AppBrain 스냅샷)
+> **⚠️ Google Play 51~100위는 MobileIndex가 아닌 AppBrain(3rd-party, 별도 산정방식)** 출처입니다 — 1~50위와 완전히 동일한 기준선이 아니므로 순위 비교 시 유의하세요. App Store는 1~100위 전부 MobileIndex 동일 출처("더보기" 확장, 로그인 불요)입니다.
+> 월매출은 2026년 5월 MobileIndex 월간 차트(IGAWorks 블로그 인용, 상위 5개 타이틀만 공개)에서 확인된 것만 표기. 51~100위는 장르·출시연도·누적매출·MAU 컬럼을 아직 수집하지 못해 "—"로 표기. 존재하지 않는 값은 만들어내지 않았습니다.
 > 이 파일은 주간 예약 작업으로 갱신되며, 누적 이력은 [history.csv](history.csv) 참고. 원스토어는 [onestore.md](onestore.md) 별도 참고.
+> **순위변동 안내:** 유일한 과거 기준점은 2026-07-13 스냅샷(양대마켓 Top20)입니다. 그 20개와 겹치는 타이틀만 순위변동(▲▼)을 계산할 수 있고, 나머지는 "최초수집"입니다. 2026년 출시 신작이거나 지난 Top20에 없었다가 새로 진입한 타이틀은 대시보드에서 노란색으로 하이라이트됩니다(회사 소속과 무관).
 
-## App Store 코리아 Top 50 (매출)
+## App Store 코리아 Top 100 (매출)
 
 | 순위 | 타이틀 | 퍼블리셔 | 장르 | 출시연도 | 월매출(억원) | 누적매출 | MAU(한국) |
 |---|---|---|---|---|---|---|---|
@@ -59,10 +60,60 @@
 | 48 | 불사용사 키우기 | SUPERBOX. Inc | RPG·시뮬레이션 | 2026 | — | — | — |
 | 49 | 한게임 로얄홀덤 | **NHN** Corp. | 카지노·카드 | 2023 | — | — | — |
 | 50 | 그놈은 드래곤 | GameTree Entertainment | 전략·RPG | 2026 | — | — | — |
+| 51 | 세븐나이츠 리버스 | **Netmarble** Corporation | — | — | — | — | — |
+| 52 | 카트라이더 러쉬플러스 | **NEXON** Company | — | — | — | — | — |
+| 53 | 슬레이어 키우기 | GEAR2 | — | — | — | — | — |
+| 54 | 한게임 로얄홀덤 | **NHN** Corp. | — | — | — | — | — |
+| 55 | 쿠키런: 오븐브레이크 | **Devsisters** | — | — | — | — | — |
+| 56 | 미스터리 타운: 합성 게임 | Cedar Games Studio | — | — | — | — | — |
+| 57 | AION2 | **NCSOFT** | — | — | — | — | — |
+| 58 | 토이 삼국 | RHINOS | — | — | — | — | — |
+| 59 | 시티 데몬헌터즈: 각성자들 | Dawn Breaking Network Technology | — | — | — | — | — |
+| 60 | 2026 프로야구GO! | **Haegin** Co., Ltd. | — | — | — | — | — |
+| 61 | 오늘의 꽃 | Ujoy Games Limited | — | — | — | — | — |
+| 62 | 두근두근타운 | XD Entertainment Co., Ltd. | — | — | — | — | — |
+| 63 | 한게임포커 클래식 - 7포커 홀덤 섯다 훌라 슬롯 | **NHN** Corp. | — | — | — | — | — |
+| 64 | 클래시 오브 클랜 | Supercell | — | — | — | — | — |
+| 65 | 탑 히어로즈: 영웅의 시대 | River Game HK Limited | — | — | — | — | — |
+| 66 | 우마무스메 프리티 더비 | **Kakao Games** Corp. | — | — | — | — | — |
+| 67 | 세포 특공대 | Snap Brain Games | — | — | — | — | — |
+| 68 | 마구마구 2026: 풀체인지 | **Netmarble** Corporation | — | — | — | — | — |
+| 69 | 메이플스토리M | **NEXON** Company | — | — | — | — | — |
+| 70 | Forge Master – Idle RPG | Lessmore GmbH | — | — | — | — | — |
+| 71 | 붕괴: 스타레일 | COGNOSPHERE PTE. LTD. | — | — | — | — | — |
+| 72 | 클래시 로얄 | Supercell | — | — | — | — | — |
+| 73 | 쿠키런 | **Devsisters** | — | — | — | — | — |
+| 74 | 그레이 사가 | Leniu Games | — | — | — | — | — |
+| 75 | 몬길: STAR DIVE | **Netmarble** Corporation | — | — | — | — | — |
+| 76 | 컴투스프로야구2026 | **Com2uS** Corp. | — | — | — | — | — |
+| 77 | 라스트 Z: 서바이벌 슈터 | Omnilojo Pte Ltd | — | — | — | — | — |
+| 78 | 할리우드 머지 | VoyagerOne | — | — | — | — | — |
+| 79 | 프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠 | Nuverse | — | — | — | — | — |
+| 80 | 변신 키우기 | Billionairegames | — | — | — | — | — |
+| 81 | 더 코지 플로리스트 | RiftSky Games | — | — | — | — | — |
+| 82 | Toon Blast | Peak Games | — | — | — | — | — |
+| 83 | Age of Origins: Tower Defense | HK Ke Mo software Co., Limited | — | — | — | — | — |
+| 84 | 피쉬돔(Fishdom) | Playrix | — | — | — | — | — |
+| 85 | 파운데이션: 우주 전선 | FunPlus International AG | — | — | — | — | — |
+| 86 | 피망 뉴맞고: 고스톱으로 대한민국 1등 | **Neowiz** | — | — | — | — | — |
+| 87 | 템빨용사: 픽셀 아이템 머지 RPG | 5minlab Co., Ltd. | — | — | — | — | — |
+| 88 | 쿠키런: 킹덤 | **Devsisters** | — | — | — | — | — |
+| 89 | 창세기전 모바일 - 서풍의 광시곡 | LINE Games | — | — | — | — | — |
+| 90 | Project Makeover | Magic Tavern, Inc. | — | — | — | — | — |
+| 91 | 라그나로크 오리진 클래식 | Gravity Game Vision Limited | — | — | — | — | — |
+| 92 | 헬로키티 마이 드림 스토어 | ACTGames Co., Ltd. | — | — | — | — | — |
+| 93 | 갓깨비 키우기 | Joy Net Games | — | — | — | — | — |
+| 94 | Minecraft | Mojang | — | — | — | — | — |
+| 95 | Domino Dreams™ | SuperPlay | — | — | — | — | — |
+| 96 | 나이트 크로우 | **Wemade** Co., Ltd. | — | — | — | — | — |
+| 97 | 뱀피르 | **Netmarble** Corporation | — | — | — | — | — |
+| 98 | 좀비고등학교 | AWESOMEPIECE | — | — | — | — | — |
+| 99 | 콜 오브 드래곤즈 | Farlight Games | — | — | — | — | — |
+| 100 | Dark War: Survival | Omnilojo Pte Ltd | — | — | — | — | — |
 
-† 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님 — 이후 순위 하락으로 현재와 다를 수 있음)
+† 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님 — 이후 순위 하락으로 현재와 다를 수 있음). 51~100위는 2026-07-14 14:23 KST MobileIndex "더보기" 확장 데이터(순위·타이틀·퍼블리셔만, 나머지 컬럼 미수집).
 
-## Google Play 코리아 Top 50 (매출) — 순위 확인분 45개 + 순위 미확인 5개
+## Google Play 코리아 Top 100 (매출) — 1~50위 MobileIndex / 51~100위 AppBrain(별도 출처)
 
 | 순위 | 타이틀 | 퍼블리셔 | 장르 | 출시연도 | 월매출(억원) | 누적매출 | MAU |
 |---|---|---|---|---|---|---|---|
@@ -116,30 +167,81 @@
 | — | Genshin Impact | COGNOSPHERE | 오픈월드액션RPG | 2020 | — | 글로벌 누적 40억달러+; 한국누적 약 2.5억달러(6.2%) | — |
 | — | 한게임 섯다&맞고 | **NHN** Corp. | 카드(고스톱) | — | — | — | — |
 | — | 뮤 모나크2 | **Webzen** Inc. | MMORPG | 2024 | — | — | — |
+| 51 | 우마무스메 프리티 더비 | **Kakao Games** Corp. | — | — | — | — | — |
+| 52 | Flambé®: Merge & Cook | Microfun Limited | — | — | — | — | — |
+| 53 | Slayer Legend : Idle RPG | GEAR2 | — | — | — | — | — |
+| 54 | Township | Playrix | — | — | — | — | — |
+| 55 | 뮤 모나크2 | **Webzen** Inc. | — | — | — | — | — |
+| 56 | League of Legends: Wild Rift | Riot Games, Inc | — | — | — | — | — |
+| 57 | Homescapes | Playrix | — | — | — | — | — |
+| 58 | Mystery Town: Merge Games | Cedar Games Studio | — | — | — | — | — |
+| 59 | Disney Solitaire | SuperPlay. | — | — | — | — | — |
+| 60 | Top Heroes: Kingdom Saga | RiverGame | — | — | — | — | — |
+| 61 | Honkai: Star Rail | COGNOSPHERE PTE. LTD. | — | — | — | — | — |
+| 62 | Undying Hero: Idle RPG | SUPERBOX Inc | — | — | — | — | — |
+| 63 | Dragon Traveler | HongKong GameTree Limited | — | — | — | — | — |
+| 64 | 한게임 신맞고: 대한민국 원조 고스톱 | **NHN** Corp. | — | — | — | — | — |
+| 65 | RF ONLINE NEXT | **Netmarble** | — | — | — | — | — |
+| 66 | 리니지2M | **NCSOFT** | — | — | — | — | — |
+| 67 | Travel Town - Merge Adventure | Magmatic Games LTD | — | — | — | — | — |
+| 68 | Legend of Avatar | BillionaireGames | — | — | — | — | — |
+| 69 | Lost Sword 1-Year Anniversary | **Wemade** Connect | — | — | — | — | — |
+| 70 | 피망 뉴맞고: 고스톱 대표 맞고 게임 | **Neowiz** corp | — | — | — | — | — |
+| 71 | Merge Cooking® | Happibits Game | — | — | — | — | — |
+| 72 | Hearthstone | Blizzard Entertainment, Inc. | — | — | — | — | — |
+| 73 | 컴투스프로야구2026 | **Com2uS** | — | — | — | — | — |
+| 74 | Hollywood Merge | VoyagerOne IE | — | — | — | — | — |
+| 75 | Dark War Survival | Omnilojo Pte Ltd | — | — | — | — | — |
+| 76 | Tiles Survive! | FunPlus International AG | — | — | — | — | — |
+| 77 | 로드나인 | **Smilegate**, Inc. | — | — | — | — | — |
+| 78 | WPL:Texas Hold'em, MTT, Sit&Go | Zempot INC. | — | — | — | — | — |
+| 79 | Summoners War X Frieren | **Com2uS** | — | — | — | — | — |
+| 80 | RAVEN2 | **Netmarble** | — | — | — | — | — |
+| 81 | Horde War: Summon of Avengers | JoyTogether Games | — | — | — | — | — |
+| 82 | Zombie Waves | Fun Formula | — | — | — | — | — |
+| 83 | 임진왜란: 조선의 반격 | JOYCITY Corp. | — | — | — | — | — |
+| 84 | 메이플스토리M | **NEXON** Company | — | — | — | — | — |
+| 85 | Overgeared Hero: Merge RPG | 5minlab Corp. | — | — | — | — | — |
+| 86 | 갓깨비 키우기-999뽑기 증정 | Joy Nice Games | — | — | — | — | — |
+| 87 | Fishdom | Playrix | — | — | — | — | — |
+| 88 | ArcheAge WAR | **Kakao Games** Corp. | — | — | — | — | — |
+| 89 | Heartopia | XD Entertainment Co., Ltd. | — | — | — | — | — |
+| 90 | State of Survival: Zombie War | FunPlus International AG | — | — | — | — | — |
+| 91 | 나이트 크로우 | **Wemade** Co., Ltd | — | — | — | — | — |
+| 92 | Merge Teahouse | X.P. Games | — | — | — | — | — |
+| 93 | 한게임 로얄 홀덤 | **NHN** Corp. | — | — | — | — | — |
+| 94 | 뮤 모나크 | **Webzen** Inc. | — | — | — | — | — |
+| 95 | Cat Hero : Idle RPG | Gameduo | — | — | — | — | — |
+| 96 | 추노 키우기 | DwG | — | — | — | — | — |
+| 97 | 오늘의 꽃 | Ujoy Games | — | — | — | — | — |
+| 98 | 리니지2 레볼루션 | **Netmarble** | — | — | — | — | — |
+| 99 | Domino Dreams™ | SuperPlay. | — | — | — | — | — |
+| 100 | 2026 프로야구GO! | **Haegin** Co., Ltd. | — | — | — | — | — |
 
-† 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님)
+† 2026년 5월 MobileIndex 기준 (§ 마비노기 모바일은 2025.3~10 누적매출 3,000억원의 월평균 도출값, 실측 월매출 아님). 51~100위는 2026-07-14 AppBrain 스냅샷(순위·타이틀·퍼블리셔만, 나머지 컬럼 미수집, MobileIndex와 산정방식 상이).
 
-## 순위 변동 및 신규진입 표시 관련 안내
-이번 갱신부터 Top50 스냅샷 수집을 시작했습니다. **순위변동(▲▼)과 신규진입 하이라이트는 다음 갱신(주간)부터 이전 스냅샷과 비교하여 표시됩니다** — 이번 회차는 비교 기준점(baseline)입니다.
-
-## 관심 15개사 진입 현황 (Top50 기준)
-- **Kakao Games** — 오딘: 발할라 라이징 (GP 1위 / AS 27위)
-- **NCSOFT** — 리니지M(GP 9위/AS 11·46위), 리니지W(GP 30위), AION2(GP 39위)
-- **Nexon** — 메이플 키우기, 마비노기 모바일, FC 모바일, EA SPORTS FC Online M (양대마켓 다수)
-- **Krafton** — 배틀그라운드 모바일 (GP 18위 / AS 5위)
-- **Devsisters·LINE Games·Smilegate** — Top50 밖 (미진입)
-- **Haegin** — 드래곤빌리지3 (Highbrow 계열, GP 45위 / AS 26위)
-- **Com2uS** — 컴투스프로야구V26 (GP 29위 / AS 7위)
-- **Netmarble** — SOL: enchant, 몬길: STAR DIVE, 뱀피르, 세븐나이츠 리버스 (다수 진입)
-- **NHN** — 한게임포커 클래식·한게임 섯다&맞고·한게임 포커·한게임 로얄홀덤 (웹보드 다수 진입)
-- **Neowiz** — 피망 포커 (GP 40위)
-- **Webzen** — 뮤 모나크2 (GP 기타)
-- **Pearl Abyss·Wemade·Shiftup** — Top50 밖 (미진입; 니케는 Level Infinite 퍼블리싱으로 진입하나 Shift Up 매출 직접귀속과는 별개 표기)
+## 관심 15개사 진입 현황 (Top100 기준)
+- **Kakao Games** — 오딘: 발할라 라이징(GP1/AS27), 우마무스메 프리티 더비(GP51/AS66), ArcheAge WAR(GP88)
+- **NCSOFT** — 리니지M(GP9/AS11·46), 리니지W(GP30), AION2(GP39/AS57), 리니지2M(GP66)
+- **Nexon** — 메이플 키우기, 마비노기 모바일, FC 모바일, EA SPORTS FC Online M, 카트라이더 러쉬플러스(AS52), 메이플스토리M(GP84/AS69)
+- **Krafton** — 배틀그라운드 모바일 (GP18/AS5)
+- **Devsisters** — 쿠키런: 오븐브레이크(AS55), 쿠키런(AS73), 쿠키런: 킹덤(AS88) — **51위 밖에서 신규 진입 확인**
+- **Smilegate** — 로드나인(GP77) — **51위 밖에서 신규 진입 확인**
+- **Wemade** — 나이트 크로우(AS96/GP91), Lost Sword(GP69)
+- **Haegin** — 드래곤빌리지3(GP45/AS26), 2026 프로야구GO!(AS60/GP100)
+- **Com2uS** — 컴투스프로야구V26/2026, Summoners War X Frieren(GP79)
+- **Netmarble** — SOL: enchant, 몬길: STAR DIVE, 뱀피르, 세븐나이츠 리버스, 마구마구2026, RF ONLINE NEXT, RAVEN2, 리니지2 레볼루션 (다수 진입)
+- **NHN** — 한게임 웹보드 라인업 다수 진입 (포커/맞고/홀덤 계열)
+- **Neowiz** — 피망 포커(GP40), 피망 뉴맞고(AS86/GP70)
+- **Webzen** — 뮤 모나크2(GP), 뮤 모나크(GP94)
+- **LINE Games** — 창세기전 모바일(AS89) — 대시보드 회사카드에서는 제외됐으나 순위표에는 등장
+- **Pearl Abyss·Shift Up** — Top100 밖 (미진입; 니케는 Level Infinite 퍼블리싱으로 진입하나 Shift Up 매출 직접귀속과는 별개 표기)
 
 ## 출처
-- MobileIndex 실시간 순위: https://game.mobileindex.com/chart/real
+- MobileIndex 실시간 순위 (App Store 1~100위, Google Play 1~50위): https://game.mobileindex.com/chart/real
 - MobileIndex 월간 유저 순위(MAU): https://game.mobileindex.com/chart/month/player?tag=tc1061
-- Apple iTunes Lookup API (genre/release date): https://itunes.apple.com/lookup
+- AppBrain (Google Play 51~100위): https://appbrain.com/stats/google-play-rankings/top_grossing/game/kr
+- Apple iTunes Lookup API (genre/release date, 1~50위만 적용): https://itunes.apple.com/lookup
 - IGAWorks 블로그 월간 매출 TOP5: https://www.igaworksblog.com/post/mobilegame-chart-2606
 - Sensor Tower/Appfigures/Similarweb 무료 미리보기 (교차검증용, 각 25~51위 상한)
 - 상세 출처는 각 리서치 원문 참고 (대시보드 카드의 "GitHub에서 자세히 보기" 링크로 회사별 페이지 연결)
