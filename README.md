@@ -1,10 +1,10 @@
-# KRGameCompanyStatus
+# K-GameCompanyStatus
 
 한국 게임사 실적(IR)·주요 타이틀 지표·모바일/PC 게임 순위를 추적하는 저장소.
-(구 저장소명: GameCompaniesStatus — GitHub이 자동 리다이렉트하지만, 새 클론/링크는 `KRGameCompanyStatus` 사용 권장)
+(구 저장소명: GameCompaniesStatus → KRGameCompanyStatus — GitHub이 자동 리다이렉트하지만, 새 클론/링크는 `K-GameCompanyStatus` 사용 권장)
 
 ## 🎮 라이브 대시보드
-**https://hazelryu.github.io/KRGameCompanyStatus/dashboard/**
+**https://hazelryu.github.io/K-GameCompanyStatus/dashboard/**
 
 15개사 분기/연간 매출 비교 차트(절대값·성장률 토글), 회사별 카드(현재 앱 순위 연동, 출시예정작 하이라이트), 구글플레이·앱스토어 Top100 순위(신규진입/순위변동 표시), PC방·스팀 순위를 한 화면에서 확인할 수 있습니다.
 

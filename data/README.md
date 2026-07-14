@@ -1,6 +1,6 @@
 # data/ 폴더 안내
 
-라이브 대시보드: **https://hazelryu.github.io/KRGameCompanyStatus/dashboard/** (이 아래 원본 데이터를 사람이 읽기 좋게 시각화한 버전)
+라이브 대시보드: **https://hazelryu.github.io/K-GameCompanyStatus/dashboard/** (이 아래 원본 데이터를 사람이 읽기 좋게 시각화한 버전)
 
 ## 구조
 
