@@ -16,12 +16,23 @@
     </nav>
   </header>
 
+  <div class="highlights-block">
+    <h2 class="highlights-title">이번 주 주요 변화 <span class="rank-badge">2026-07-14 기준, 큐레이션 — 주간 갱신</span></h2>
+    <ul class="highlights-list" id="highlightsList"></ul>
+  </div>
+
   <section id="panelCompanies" class="panel" role="tabpanel" aria-labelledby="tabBtnCompanies">
 
     <div class="agg-chart-wrap">
       <div class="agg-chart-head">
-        <h2 class="agg-title">상장 13개사 분기 매출 비교</h2>
-        <p class="agg-sub">2024 Q1 ~ 2026 Q1, 전 구간 억원(KRW) 환산. 그래프 위에 마우스를 올리면(모바일은 탭) 해당 분기 전체 회사 순위가 보입니다.</p>
+        <div class="agg-title-row">
+          <h2 class="agg-title">상장 13개사 분기 매출 비교</h2>
+          <div class="mode-toggle" id="aggModeToggle">
+            <button class="mode-btn is-active" data-mode="revenue">매출(억원)</button>
+            <button class="mode-btn" data-mode="growth">성장률(YoY%)</button>
+          </div>
+        </div>
+        <p class="agg-sub">2024 Q1 ~ 2026 Q1, 전 구간 억원(KRW) 환산. 그래프 위에 마우스를 올리면(모바일은 탭) 해당 분기 전체 회사 순위가 보입니다. 성장률 모드는 4분기 전(전년 동기) 대비 %이며, 2025 Q1부터 계산 가능합니다.</p>
       </div>
       <div class="agg-chart-body">
         <div class="agg-svg-holder" id="aggChartHolder"></div>
@@ -29,6 +40,10 @@
       </div>
       <div class="agg-legend" id="aggLegend"></div>
       <p class="rank-legend">넥슨은 억엔(JPY) 공시를 <b id="aggFxNote">약 1엔=9.3원</b> 환율로 환산한 근사치입니다(실시간 환율 아님, 비교용). 점선은 카드 색상을 재사용한 5개사(네오위즈·펄어비스·위메이드·시프트업·웹젠)를 실선 그룹과 구분한 표시입니다. <b>NHN은 게임 외 결제·클라우드·커머스를 포함한 회사 전체 매출</b>이라 다른 회사들과 단순 비교 시 과대평가될 수 있습니다(게임 부문만 보려면 아래 카드 참고). 범례를 클릭하면 해당 회사 선을 흐리게/선명하게 토글할 수 있습니다.</p>
+    </div>
+
+    <div class="search-row">
+      <input type="search" id="companySearch" class="search-input" placeholder="회사명으로 검색 (예: 넥슨, Nexon)" aria-label="회사 검색">
     </div>
 
     <div class="scrubber-wrap">
@@ -50,7 +65,13 @@
 
     <div class="agg-chart-wrap agg-chart-wrap--small">
       <div class="agg-chart-head">
-        <h2 class="agg-title">스마일게이트·해긴 연간 매출 비교</h2>
+        <div class="agg-title-row">
+          <h2 class="agg-title">스마일게이트·해긴 연간 매출 비교</h2>
+          <div class="mode-toggle" id="unlistedModeToggle">
+            <button class="mode-btn is-active" data-mode="revenue">매출(억원)</button>
+            <button class="mode-btn" data-mode="growth">성장률(YoY%)</button>
+          </div>
+        </div>
         <p class="agg-sub">회계연도별(FY), 단위 억원. 두 회사의 연도 범위가 달라 겹치는 구간만 비교 가능합니다.</p>
       </div>
       <div class="agg-chart-body">
@@ -73,6 +94,12 @@
       </div>
       <select id="rankDateSelect" aria-label="날짜 선택"></select>
       <p class="rank-note">기준 스냅샷: 2026-07-13(1~20위, 기존 컬럼) → 2026-07-14(전체, 확장 컬럼). <b class="hl-new-swatch">노란 강조</b>는 2026년 출시 신작이거나 지난 스냅샷에 없던 신규 Top20 진입작입니다 — 특정 회사 소속 여부와는 무관합니다. 21위 밖 타이틀은 이번이 첫 수집이라 순위변동을 비교할 기준이 없어 "최초수집"으로 표시됩니다.</p>
+    </div>
+
+    <div class="search-row">
+      <input type="search" id="rankSearch" class="search-input" placeholder="타이틀·퍼블리셔로 검색 (예: 니케, NEXON)" aria-label="순위 검색">
+      <button class="export-btn" id="exportAsBtn">App Store CSV 내보내기</button>
+      <button class="export-btn" id="exportGpBtn">Google Play CSV 내보내기</button>
     </div>
 
     <div class="onestore-block">
@@ -177,6 +204,13 @@
   #dash h2, #dash h3{margin:0;}
   #dash .subtitle{font-size:12.5px; color:var(--muted); margin:2px 0 0;}
 
+  .highlights-block{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 18px; margin-bottom:16px;}
+  .highlights-title{font-size:13px; font-weight:700; margin:0 0 8px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .highlights-list{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr)); gap:6px 16px;}
+  .highlights-list li{font-size:12px; color:var(--ink-2); padding-left:14px; position:relative; line-height:1.4;}
+  .highlights-list li::before{content:"●"; position:absolute; left:0; top:0; font-size:8px; color:var(--accent);}
+  .highlights-list b{color:var(--ink);}
+
   .topbar{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:18px;}
   .tabs{display:flex; gap:4px; background:var(--surface); border:1px solid var(--border); border-radius:9px; padding:3px;}
   .tab-btn{border:none; background:transparent; color:var(--ink-2); font-size:13px; font-weight:600; padding:7px 14px; border-radius:6px; cursor:pointer;}
@@ -194,10 +228,21 @@
   .scrubber-ticks{display:flex; justify-content:space-between; padding:0 38px; margin-top:4px;}
   .scrubber-ticks span{font-size:10px; color:var(--muted); font-variant-numeric:tabular-nums;}
 
+  .search-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:14px;}
+  .search-input{flex:1 1 240px; font-size:13px; border:1px solid var(--border); background:var(--surface); color:var(--ink); border-radius:8px; padding:8px 12px;}
+  .search-input:focus{outline:2px solid var(--accent); outline-offset:1px;}
+  .export-btn{font-size:12px; font-weight:600; color:var(--ink); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:8px 12px; cursor:pointer; white-space:nowrap;}
+  .export-btn:hover{background:var(--accent-wash); border-color:var(--accent);}
+  .no-results{font-size:12.5px; color:var(--muted); padding:16px; text-align:center;}
+
   .section-label{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); margin:24px 0 12px;}
 
   .agg-chart-wrap{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin-bottom:20px;}
   .agg-chart-wrap--small{margin:12px 0 16px;}
+  .agg-title-row{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+  .mode-toggle{display:flex; gap:3px; background:var(--page); border:1px solid var(--border); border-radius:7px; padding:2px;}
+  .mode-btn{border:none; background:transparent; color:var(--ink-2); font-size:11px; font-weight:600; padding:5px 10px; border-radius:5px; cursor:pointer;}
+  .mode-btn.is-active{background:var(--accent); color:#fff;}
   .agg-title{font-size:15px; font-weight:700; margin:0 0 2px;}
   .agg-sub{font-size:11.5px; color:var(--muted); margin:0 0 10px;}
   .agg-chart-body{position:relative;}
@@ -246,6 +291,8 @@
   .titles{list-style:none; margin:0 0 10px; padding:0; display:flex; flex-direction:column; gap:5px;}
   .titles li{font-size:12px; color:var(--ink-2); padding-left:12px; position:relative;}
   .titles li::before{content:"›"; position:absolute; left:0; color:var(--company-color); font-weight:700;}
+
+  .current-rank{font-size:11px; color:var(--accent); background:var(--accent-wash); border-radius:6px; padding:4px 8px; margin:0 0 8px; font-weight:600;}
 
   .upcoming-block{background:var(--gold-wash); border:1px solid var(--gold); border-radius:8px; padding:8px 10px; margin:0 0 10px;}
   .upcoming-block .upcoming-label{font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--gold); margin-bottom:4px; display:block;}
@@ -676,6 +723,18 @@
     return { html: '<span class="rank-unk">최초수집</span>', isNew: isNewRelease };
   }
 
+  // Hand-curated, refreshed by the weekly IR-check scheduled task. Keep to ~5-8 genuinely notable items, not routine earnings.
+  var WEEKLY_HIGHLIGHTS = [
+    "<b>Kakao Games</b> — 2026-03 LY Corporation에 경영권 매각 확정 (카카오 지분 38.7%→14%, 2대주주로)",
+    "<b>Wemade</b> — 2026-06-30 창업자 지분 39%를 중국계 NeoPulse에 매각 합의, 진행 중(잔금 10-30 예정)",
+    "<b>Pearl Abyss</b> — 붉은사막 흥행으로 2026 Q1 영업이익 +2,585% 급증, 역대 최대 분기",
+    "<b>Kakao Games</b> — 오딘: 발할라 라이징 5주년 업데이트로 2026-07 양대마켓 매출 1위 재탈환",
+    "<b>Smilegate</b> — 2026-01-01 홀딩스·엔터테인먼트·RPG 3개사 단일법인 합병",
+    "<b>Shift Up</b> — 텐센트가 2대주주로 지분 34.5% 보유(창업자 38.9%와 격차 4.4%p)",
+    "<b>Webzen</b> — R2M, NCSOFT 소송 패소 여파로 2026-03-30 서비스 종료",
+    "<b>Devsisters</b> — 2026-05 전사 희망퇴직 프로그램 및 임원 급여 반납 발표"
+  ];
+
   var ONESTORE = [
     { title:"창세기전 모바일", pub:"LINE Games (개발: Meerkat Games)", date:"2026-07-08", note:"2.5주년 업데이트 후 매출 1위 (과거 2026-01-14, 2025-07-09 등 반복 달성)" },
     { title:"아스텔리아M", pub:"세시소프트", date:"2025-10-22", note:"출시 8일 만에 매출 1위, 구글플레이 인기 1위(3일)도 동시 달성" }
@@ -724,8 +783,35 @@
     [10,"The Binding of Isaac: Rebirth",80854,141157]
   ];
 
+  var KOREAN_NAME = { krafton:"크래프톤", nexon:"넥슨", ncsoft:"엔씨소프트", kakaogames:"카카오게임즈", devsisters:"데브시스터즈", com2us:"컴투스", netmarble:"넷마블", nhn:"엔에이치엔", neowiz:"네오위즈", pearlabyss:"펄어비스", wemade:"위메이드", shiftup:"시프트업", webzen:"웹젠", smilegate:"스마일게이트", haegin:"해긴" };
   var COLOR_MAP = { krafton:"--c1", nexon:"--c2", ncsoft:"--c3", kakaogames:"--c4", devsisters:"--c5", com2us:"--c6", netmarble:"--c7", nhn:"--c8", neowiz:"--c1", pearlabyss:"--c2", wemade:"--c3", shiftup:"--c4", webzen:"--c5", smilegate:"--c6", haegin:"--c7" };
   var REPO = "https://github.com/hazelryu/GameCompaniesStatus/blob/main/data/companies/";
+
+  // For each company id, find its best (lowest-number) rank per store in the Top100 tables, for the "현재 순위" line on cards.
+  function getCurrentRanks(companyId){
+    var out = [];
+    [["AS", AS_TOP100], ["GP", GP_TOP100]].forEach(function(pair){
+      var storeLabel = pair[0], rows = pair[1];
+      var best = null;
+      rows.forEach(function(r){
+        if(r[8] !== companyId) return;
+        var rank = r[0];
+        if(rank === "-") return;
+        if(best === null || rank < best.rank) best = { rank: rank, title: r[1] };
+      });
+      if(best) out.push({ store: storeLabel, rank: best.rank, title: best.title });
+    });
+    return out;
+  }
+
+  function currentRankHtml(companyId){
+    var ranks = getCurrentRanks(companyId);
+    if(ranks.length===0) return "";
+    var parts = ranks.map(function(r){
+      return (r.store==="AS"?"앱스토어":"구글플레이")+' '+r.rank+'위 · '+r.title;
+    });
+    return '<div class="current-rank">현재 순위 — '+parts.join(' · ')+'</div>';
+  }
 
   function fmtWon(v, unit){
     if(v===null||v===undefined) return "데이터 없음";
@@ -794,26 +880,55 @@
   }
 
   function renderMultiLineChart(opts){
-    // opts: {svgHolderId, tooltipId, legendId, labels, series:[{id,name,colorVar,dashed,values,unit}], defaultUnit}
+    // opts: {svgHolderId, tooltipId, legendId, labels, series:[{id,name,colorVar,dashed,values,unit}], mode:"revenue"|"growth"}
+    var mode = opts.mode || "revenue";
     var W=900, H=300, padL=64, padR=16, padT=14, padB=34;
     var plotW = W-padL-padR, plotH = H-padT-padB;
     var labels = opts.labels, series = opts.series;
     var xs = labels.length-1 || 1;
+
+    function toChartVal(s, v){
+      if(v===null || v===undefined) return null;
+      if(mode==="growth") return v; // already a %, unit-free
+      return (s.unit==="억엔") ? v*NEXON_FX_RATE : v;
+    }
+    function fmtAxis(val){
+      if(mode==="growth") return (val>=0?"+":"")+Math.round(val)+"%";
+      return fmtWon(Math.round(val),"억원");
+    }
+    function fmtTooltipVal(s, raw, converted){
+      if(mode==="growth") return (raw>=0?"+":"")+raw.toFixed(1)+"%";
+      return (s.unit==="억엔") ? fmtWon(Math.round(raw),"억엔")+' (≈'+fmtWon(Math.round(converted),"억원")+')' : fmtWon(Math.round(raw),"억원");
+    }
+
     var allVals = [];
-    series.forEach(function(s){ s.values.forEach(function(v){ if(v!==null && v!==undefined) allVals.push(v); }); });
+    series.forEach(function(s){ s.values.forEach(function(v){ var cv=toChartVal(s,v); if(cv!==null) allVals.push(cv); }); });
+    var minV = allVals.length ? Math.min.apply(null, allVals) : 0;
     var maxV = allVals.length ? Math.max.apply(null, allVals) : 100;
-    var yMax = niceMax(maxV*1.08);
+    var yMax, yMin;
+    if(mode==="growth"){
+      yMax = niceMax(Math.max(Math.abs(maxV), Math.abs(minV))*1.15);
+      yMin = -yMax;
+    } else {
+      yMax = niceMax(maxV*1.08);
+      yMin = 0;
+    }
+    var span = yMax-yMin;
     function X(i){ return padL + (i/xs)*plotW; }
-    function Y(v){ return padT + plotH - (v/yMax)*plotH; }
+    function Y(v){ return padT + plotH - ((v-yMin)/span)*plotH; }
 
     var svg = '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+ (opts.ariaLabel||'회사별 매출 비교 차트') +'">';
     // gridlines + y labels
-    var ticks = 5;
+    var ticks = mode==="growth" ? 4 : 5;
     for(var t=0;t<=ticks;t++){
-      var val = yMax*t/ticks;
+      var val = yMin + span*t/ticks;
       var y = Y(val);
       svg += '<line class="agg-gridline" x1="'+padL+'" y1="'+y.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+y.toFixed(1)+'"/>';
-      svg += '<text class="agg-axis-text" x="'+(padL-8)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end">'+fmtWon(Math.round(val),"억원")+'</text>';
+      svg += '<text class="agg-axis-text" x="'+(padL-8)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end">'+fmtAxis(val)+'</text>';
+    }
+    if(mode==="growth"){
+      var zeroY = Y(0);
+      svg += '<line class="agg-gridline" x1="'+padL+'" y1="'+zeroY.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+zeroY.toFixed(1)+'" style="stroke:var(--baseline);"/>';
     }
     // x labels
     labels.forEach(function(l,i){
@@ -823,8 +938,8 @@
     series.forEach(function(s){
       var pts = [];
       s.values.forEach(function(v,i){
-        if(v===null || v===undefined) return;
-        var vv = (s.unit==="억엔") ? v*NEXON_FX_RATE : v;
+        var vv = toChartVal(s,v);
+        if(vv===null) return;
         pts.push({i:i, v:vv});
       });
       if(pts.length===0) return;
@@ -843,13 +958,13 @@
     function showTooltip(idx){
       var rows = series.map(function(s){
         var v = s.values[idx];
-        if(v===null || v===undefined) return null;
-        var vv = (s.unit==="억엔") ? v*NEXON_FX_RATE : v;
+        var vv = toChartVal(s,v);
+        if(vv===null) return null;
         return { id:s.id, name:s.name, colorVar:s.colorVar, raw:v, unit:s.unit, converted:vv };
       }).filter(Boolean).sort(function(a,b){ return b.converted-a.converted; });
       var html = '<div class="tt-period">'+labels[idx]+'</div>';
       html += rows.map(function(r){
-        var valText = r.unit==="억엔" ? fmtWon(Math.round(r.raw),"억엔")+' (≈'+fmtWon(Math.round(r.converted),"억원")+')' : fmtWon(Math.round(r.raw),"억원");
+        var valText = fmtTooltipVal(r, r.raw, r.converted);
         return '<div class="tt-row"><span class="tt-dot" style="background:var('+r.colorVar+')"></span><span class="tt-name">'+r.name+'</span><span class="tt-val">'+valText+'</span></div>';
       }).join("");
       tooltipEl.innerHTML = html;
@@ -905,13 +1020,14 @@
   function renderListedCard(c, selIdx){
     var revv = c.revenue[selIdx], prevRev = selIdx>0 ? c.revenue[selIdx-1] : null;
     var op = c.op[selIdx], prevOp = selIdx>0 ? c.op[selIdx-1] : null;
-    var html = '<article class="card" style="--company-color:var('+c.colorVar+')">';
+    var html = '<article class="card" style="--company-color:var('+c.colorVar+')" data-name="'+(c.name+" "+(KOREAN_NAME[c.id]||"")).toLowerCase()+'">';
     html += '<div class="card-head"><span class="dot"></span><h3>'+c.name+'</h3><span class="badge">'+c.badge+'</span></div>';
     html += sparklineSvg(c.revenue, selIdx, c.colorVar);
     html += '<div class="stat-row">';
     html += '<div class="stat"><div class="stat-label">매출 ('+PERIOD_LABELS[selIdx]+')</div><div class="stat-value">'+fmtWon(revv,c.unit)+'</div>'+deltaHtml(revv,prevRev,c.unit)+'</div>';
     html += '<div class="stat"><div class="stat-label">영업이익</div><div class="stat-value">'+fmtWon(op,c.unit)+'</div>'+deltaHtml(op,prevOp,c.unit)+'</div>';
     html += '</div>';
+    html += currentRankHtml(c.id);
     html += upcomingHtml(c.upcoming);
     html += '<ul class="titles">'+c.titles.map(function(t){return '<li>'+t+'</li>';}).join("")+'</ul>';
     html += linkRowHtml(c);
@@ -922,7 +1038,7 @@
   function renderUnlistedCard(c, yearIdx){
     var revv = c.revenue[yearIdx], prevRev = yearIdx>0 ? c.revenue[yearIdx-1] : null;
     var op = c.op[yearIdx], prevOp = yearIdx>0 ? c.op[yearIdx-1] : null;
-    var html = '<article class="card" style="--company-color:var('+c.colorVar+')" data-unlisted="'+c.id+'">';
+    var html = '<article class="card" style="--company-color:var('+c.colorVar+')" data-unlisted="'+c.id+'" data-name="'+(c.name+" "+(KOREAN_NAME[c.id]||"")).toLowerCase()+'">';
     html += '<div class="card-head"><span class="dot"></span><h3>'+c.name+'</h3><span class="badge">'+c.badge+'</span>';
     html += '<select class="fy-select" data-fy-for="'+c.id+'">'+c.years.map(function(y,i){return '<option value="'+i+'"'+(i===yearIdx?" selected":"")+'>FY'+y+'</option>';}).join("")+'</select>';
     html += '</div>';
@@ -931,6 +1047,7 @@
     html += '<div class="stat"><div class="stat-label">매출 (FY'+c.years[yearIdx]+')</div><div class="stat-value">'+fmtWon(revv,c.unit)+'</div>'+deltaHtml(revv,prevRev,c.unit,"전년 대비")+'</div>';
     html += '<div class="stat"><div class="stat-label">영업이익</div><div class="stat-value">'+fmtWon(op,c.unit)+'</div>'+deltaHtml(op,prevOp,c.unit,"전년 대비")+'</div>';
     html += '</div>';
+    html += currentRankHtml(c.id);
     html += upcomingHtml(c.upcoming);
     html += '<ul class="titles">'+c.titles.map(function(t){return '<li>'+t+'</li>';}).join("")+'</ul>';
     html += linkRowHtml(c);
@@ -943,6 +1060,7 @@
 
   function renderListedGrid(selIdx){
     document.getElementById("listedGrid").innerHTML = LISTED.map(function(c){ return renderListedCard(c, selIdx); }).join("");
+    if(typeof applyCompanySearch==="function") applyCompanySearch();
   }
   function renderUnlistedGrid(){
     document.getElementById("unlistedGrid").innerHTML = UNLISTED.map(function(c){ return renderUnlistedCard(c, unlistedYearIdx[c.id]); }).join("");
@@ -950,6 +1068,7 @@
       var sel = document.querySelector('select[data-fy-for="'+c.id+'"]');
       if(sel){ sel.addEventListener("change", function(){ unlistedYearIdx[c.id] = parseInt(sel.value,10); renderUnlistedGrid(); }); }
     });
+    if(typeof applyCompanySearch==="function") applyCompanySearch();
   }
 
   function renderTicks(){
@@ -986,6 +1105,12 @@
     }).join("");
   }
 
+  function renderHighlights(){
+    document.getElementById("highlightsList").innerHTML = WEEKLY_HIGHLIGHTS.map(function(h){
+      return '<li>'+h+'</li>';
+    }).join("");
+  }
+
   function renderOnestore(){
     document.getElementById("onestoreList").innerHTML = ONESTORE.map(function(o){
       return '<li><b>'+o.title+'</b> ('+o.pub+') — '+o.date+' 매출 1위. '+o.note+'</li>';
@@ -1019,35 +1144,58 @@
     }).join("");
   }
 
-  function renderAggCharts(){
-    var listedSeries = LISTED.map(function(c){
-      return { id:c.id, name:c.name, colorVar:c.colorVar, dashed:!!DASHED_IDS[c.id], values:c.revenue, unit:c.unit };
+  function computeGrowth(values, lookback){
+    return values.map(function(v,i){
+      if(i<lookback) return null;
+      var base = values[i-lookback];
+      if(v===null||v===undefined||base===null||base===undefined||base===0) return null;
+      return (v-base)/Math.abs(base)*100;
+    });
+  }
+
+  var aggMode = "revenue";
+  var unlistedMode = "revenue";
+  var unlistedYearsGlobal = [];
+
+  function renderListedAgg(){
+    var series = LISTED.map(function(c){
+      var vals = aggMode==="growth" ? computeGrowth(c.revenue,4) : c.revenue;
+      return { id:c.id, name:c.name, colorVar:c.colorVar, dashed:!!DASHED_IDS[c.id], values:vals, unit:c.unit };
     });
     renderMultiLineChart({
       svgHolderId:"aggChartHolder", tooltipId:"aggTooltip", legendId:"aggLegend",
       labels: PERIOD_LABELS.map(function(l){ return "20"+l.replace(" "," "); }),
-      series: listedSeries,
+      series: series, mode: aggMode,
       ariaLabel: "상장 13개사 분기 매출 비교 차트"
     });
+  }
 
-    var unlistedYears = [];
-    UNLISTED.forEach(function(c){ c.years.forEach(function(y){ if(unlistedYears.indexOf(y)<0) unlistedYears.push(y); }); });
-    unlistedYears.sort();
-    var unlistedSeries = UNLISTED.map(function(c){
-      var values = unlistedYears.map(function(y){
+  function renderUnlistedAgg(){
+    var series = UNLISTED.map(function(c){
+      var values = unlistedYearsGlobal.map(function(y){
         var idx = c.years.indexOf(y);
         return idx>=0 ? c.revenue[idx] : null;
       });
+      if(unlistedMode==="growth") values = computeGrowth(values,1);
       return { id:c.id, name:c.name, colorVar:c.colorVar, dashed:false, values:values, unit:c.unit };
     });
     renderMultiLineChart({
       svgHolderId:"unlistedChartHolder", tooltipId:"unlistedTooltip", legendId:"unlistedLegend",
-      labels: unlistedYears.map(function(y){ return "FY"+y; }),
-      series: unlistedSeries,
+      labels: unlistedYearsGlobal.map(function(y){ return "FY"+y; }),
+      series: series, mode: unlistedMode,
       ariaLabel: "비상장 2개사 연간 매출 비교 차트"
     });
   }
 
+  function renderAggCharts(){
+    unlistedYearsGlobal = [];
+    UNLISTED.forEach(function(c){ c.years.forEach(function(y){ if(unlistedYearsGlobal.indexOf(y)<0) unlistedYearsGlobal.push(y); }); });
+    unlistedYearsGlobal.sort();
+    renderListedAgg();
+    renderUnlistedAgg();
+  }
+
+  renderHighlights();
   renderTicks();
   updateScrub(8);
   renderUnlistedGrid();
@@ -1080,5 +1228,69 @@
   tabBtnCompanies.addEventListener("click", function(){ activate(tabBtnCompanies, panelCompanies); });
   tabBtnRankings.addEventListener("click", function(){ activate(tabBtnRankings, panelRankings); });
   tabBtnPc.addEventListener("click", function(){ activate(tabBtnPc, panelPc); });
+
+  // Chart mode toggles (매출 vs 성장률)
+  function wireModeToggle(toggleId, setMode, rerender){
+    var el = document.getElementById(toggleId);
+    el.querySelectorAll(".mode-btn").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        el.querySelectorAll(".mode-btn").forEach(function(b){ b.classList.remove("is-active"); });
+        btn.classList.add("is-active");
+        setMode(btn.getAttribute("data-mode"));
+        rerender();
+      });
+    });
+  }
+  wireModeToggle("aggModeToggle", function(m){ aggMode = m; }, renderListedAgg);
+  wireModeToggle("unlistedModeToggle", function(m){ unlistedMode = m; }, renderUnlistedAgg);
+
+  // Company search (filters both listed + unlisted card grids)
+  function applyCompanySearch(){
+    var q = document.getElementById("companySearch").value.trim().toLowerCase();
+    var cards = document.querySelectorAll("#listedGrid .card, #unlistedGrid .card");
+    cards.forEach(function(card){
+      var name = (card.getAttribute("data-name")||"");
+      card.style.display = (!q || name.indexOf(q)>=0) ? "" : "none";
+    });
+  }
+  document.getElementById("companySearch").addEventListener("input", applyCompanySearch);
+
+  // Ranking table search (filters App Store + Google Play tables by visible text)
+  function applyRankSearch(){
+    var q = document.getElementById("rankSearch").value.trim().toLowerCase();
+    ["asTable","gpTable"].forEach(function(id){
+      document.querySelectorAll("#"+id+" tbody tr").forEach(function(tr){
+        var text = tr.innerText.toLowerCase();
+        tr.style.display = (!q || text.indexOf(q)>=0) ? "" : "none";
+      });
+    });
+  }
+  document.getElementById("rankSearch").addEventListener("input", applyRankSearch);
+
+  // CSV export (exports whatever rows are currently visible, so it respects the search filter)
+  function csvEscape(s){
+    s = String(s==null?"":s);
+    if(/[",\n]/.test(s)) return '"'+s.replace(/"/g,'""')+'"';
+    return s;
+  }
+  function exportTableCsv(tableId, filename){
+    var table = document.getElementById(tableId);
+    var headers = Array.prototype.map.call(table.querySelectorAll("thead th"), function(th){ return csvEscape(th.innerText.trim()); });
+    var rows = Array.prototype.filter.call(table.querySelectorAll("tbody tr"), function(tr){ return tr.style.display !== "none"; });
+    var lines = [headers.join(",")];
+    rows.forEach(function(tr){
+      var cells = Array.prototype.map.call(tr.querySelectorAll("td"), function(td){ return csvEscape(td.innerText.trim().replace(/\s+/g," ")); });
+      lines.push(cells.join(","));
+    });
+    var csv = lines.join("\r\n");
+    var blob = new Blob(["﻿"+csv], {type:"text/csv;charset=utf-8;"});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+  document.getElementById("exportAsBtn").addEventListener("click", function(){ exportTableCsv("asTable","appstore_kr_top100_2026-07-14.csv"); });
+  document.getElementById("exportGpBtn").addEventListener("click", function(){ exportTableCsv("gpTable","googleplay_kr_top100_2026-07-14.csv"); });
 })();
 </script>
