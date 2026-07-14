@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-09",
+  "weekday": "화",
+  "kicker": "글로벌",
+  "overview": "EA의 550억 달러 인수가 EU 외국보조금규정 신청을 앞두고 있고, Bungie는 오늘(6/9) Destiny 2 개발을 종료한다. 업계 누적 해고가 4만 4천 명을 넘어선 가운데 GDC 2026 설문에서 개발자 62%가 노조 가입 의향을 밝혔다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>EA $550억 인수, EU 신청 임박.</b> Silver Lake·사우디 PIF·Affinity Partners 컨소시엄이 Electronic Arts 인수($550억, 주당 $210)를 EU 외국보조금규정에 신청 예정. 역대 두 번째 규모 게임 M&A이며 PIF가 최대주주로 부상할 전망. <a href=\"https://www.gurufocus.com/news/8902100/electronic-arts-ea-acquisition-filing-expected-before-summer\">GuruFocus</a>"},
+        {"html": "<b>Bungie, Destiny 2 오늘 개발 종료.</b> Sony 산하 Bungie가 오늘(6/9) Destiny 2 최종 업데이트를 끝으로 개발을 마감, 잔여 인력은 Marathon으로 이동하며 추가 해고가 예상된다. <a href=\"https://www.metaintro.com/blog/sony-bungie-layoffs-destiny-2-sunset-2026\">Metaintro</a>"},
+        {"html": "<b>업계 누적 해고 4만 4천 명 돌파.</b> 글로벌 게임 매출 $1,956억 신기록에도 해고가 지속되고, GDC 2026 설문에서 개발자 62%가 노조 가입 의향을 밝혔다."}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>Summer Game Fest 2026 역대급 쇼케이스.</b> Resident Evil Veronica, Final Fantasy VII Revelation, Attack on Titan 3, Palworld 1.0(7/10 출시), The Wolf Among Us 2 등이 대거 공개됐다. <a href=\"https://www.gamespot.com/articles/summer-game-fest-live-2026-all-the-biggest-announcements-and-games/\">GameSpot</a>"},
+        {"html": "<b>PlayStation State of Play 주요 발표.</b> God of War Laufey, Until Dawn 2, Marvel's Wolverine 신규 게임플레이, Tomb Raider·Silent Hill: Downfall 출시일 확정. <a href=\"https://blog.playstation.com/2026/06/02/state-of-play-june-2026-all-announcements-trailers/\">PlayStation Blog</a>"},
+        {"html": "<b>Nintendo Direct 오늘(6/9) 개최.</b> <a href=\"https://gamerant.com/nintendo-direct-june-2026-date-time/\">Game Rant</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>모바일 게임 전체 매출의 52%.</b> 2026년 모바일 게임 시장 규모는 $1,070억~$1,330억으로 전체 게임 매출의 최대 52%를 차지. <a href=\"https://www.blog.udonis.co/mobile-marketing/mobile-games/mobile-game-revenue\">Udonis</a>"},
+        {"html": "<b>Honor of Kings 글로벌 1위($25억+).</b> PUBG Mobile이 2위($20억). 캐주얼에서는 Royal Match가 Monopoly Go를 추월. <a href=\"https://www.blog.udonis.co/mobile-marketing/mobile-games/top-grossing-mobile-games\">Udonis</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>Xbox Games Showcase 하이라이트.</b> Gears of War E-Day 첫 게임플레이, Halo Campaign Evolved 출시일, Persona 6 첫 공개 및 Persona 4 Revival 출시일 발표. <a href=\"https://www.allkeyshop.com/blog/xbox-games-showcase-june-2026-recap-news-n/\">AllKeyShop</a>"},
+        {"html": "<b>Nintendo Switch 2 라인업 강화.</b> FF7 Rebirth가 6/3 Switch 2·Xbox에 출시, Star Fox on Switch 2는 6/25 출시 예정. <a href=\"https://www.gamesradar.com/video-game-release-dates/\">GamesRadar</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

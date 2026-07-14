@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-23",
+  "weekday": "화",
+  "kicker": "글로벌",
+  "overview": "2026년 글로벌 게임 업계 감원이 누적 3,700명을 넘어선 가운데, EA가 550억 달러 규모로 사우디 PIF 컨소시엄에 인수되며 사상 최대 LBO이자 게임 M&A 신기록을 세웠다. Xbox의 사업 '리셋' 선언 이후 구조조정 우려가 확산되는 분위기다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>2026년 글로벌 게임 업계 감원 누적 3,700명 돌파.</b> Epic Games(약 1,000명)와 Bungie(소니 인수 후 3차 감원 준비)가 가장 큰 타격을 받았다. 미국이 전체의 약 58%(2,153명)를 차지했다. <a href=\"https://www.storyboard18.com/amp/gaming-news/gaming-industry-logs-over-3700-layoffs-in-2026-bungie-epic-games-among-hardest-hit-101789.htm\">Storyboard18</a>"},
+        {"html": "<b>Xbox 경영진, 대대적 '리셋' 선언.</b> 6월 10일 선언. 단순 감원을 넘어 어떤 스튜디오·제품을 존속시킬지, Game Pass 가격과 타 플랫폼 출시 전략까지 재편하겠다는 신호다. <a href=\"https://www.techtimes.com/articles/318519/20260616/gaming-industry-layoffs-spread-beyond-xbox-july-purge-threatens-sony-ea-studios.htm\">TechTimes</a>"},
+        {"html": "<b>EA, 550억 달러 규모로 인수 — 사상 최대 LBO.</b> Affinity Partners·Silver Lake·사우디 PIF 컨소시엄 주도. 이 딜로 해당 분기 게임 M&A 규모가 569억 달러까지 치솟았다. <a href=\"https://www.datasite.com/en/resources/insights/market-spotlight-will-the-ea-buyout-level-up-gaming-m-and-a\">Datasite</a>"},
+        {"html": "<b>업계, 소수 대형 프랜차이즈·AI 보조 개발 중심으로 재편.</b> Playtika의 1월 500명 감원도 AI 기반 개발 전환이 명시적 사유였다. <a href=\"https://www.prokerala.com/news/articles/a1777445.html\">Prokerala</a>"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>Frostpunk 2: Breach of Trust 확장팩 출시(6/23).</b> 이번 주 최대 출시일. <a href=\"https://www.dlcompare.com/gaming-news/this-week-s-video-game-releases-june-2026-week-26\">DLCompare</a>"},
+        {"html": "<b>Devil May Cry 5, 닌텐도 스위치 2 데뷔(6/23) · Star Fox 부활(6/25).</b> <a href=\"https://www.dlcompare.com/gaming-news/this-week-s-video-game-releases-june-2026-week-26\">DLCompare</a>"},
+        {"html": "<b>Kingdom Hearts IV, PS5·Xbox Series·Switch2·PC 멀티플랫폼 공식 확정.</b> <a href=\"https://www.gematsu.com/2026/06/kingdom-hearts-iv-confirmed-for-ps5-xbox-series-switch-2-and-pc\">Gematsu</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>2026년 모바일 게임 시장 약 1,330~1,340억 달러.</b> 전체 게임 매출의 절반 이상, 2030년 1,640억 달러(CAGR 5.1%) 전망. <a href=\"https://www.statista.com/outlook/amo/media/games/mobile-games/worldwide\">Statista</a>"},
+        {"html": "<b>한국 게임사들, 모바일 성장 둔화 속 콘솔을 새 돌파구로.</b> 넷마블은 '일곱 개의 대죄: 오리진'을 PC·콘솔·모바일로 출시, 하반기 'Evilbane' 콘솔 출시 예정. <a href=\"https://www.digitaltoday.co.kr/en/view/45901/korean-game-makers-seek-breakthrough-on-consoles-as-mobile-growth-slows\">Digital Today</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>6월 쇼케이스 시즌 러시.</b> PlayStation State of Play, Xbox Games Showcase, Nintendo Direct가 잇따라 열림. <a href=\"https://blog.playstation.com/2026/06/02/state-of-play-june-2026-all-announcements-trailers/\">PlayStation Blog</a>"},
+        {"html": "<b>공정위 기준 넥슨(15.1조)·넷마블(13조)·크래프톤(9.2조)이 국내 업계 선두 유지.</b> <a href=\"https://www.invenglobal.com/articles/21438/nexon-retains-top-spot-among-gaming-giants-krafton-significantly-expands-affiliates\">Inven Global</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

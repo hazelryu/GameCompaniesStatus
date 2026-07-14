@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-26",
+  "weekday": "금",
+  "kicker": "글로벌",
+  "overview": "EA의 사상 최대 LBO(약 550억 달러)가 6월 30일 마감을 앞두고 마무리 수순에 들어간 가운데, 2026년 글로벌 게임업계 감원은 3,700명을 넘어섰다. 국내에서는 넥슨이 공정자산 15.1조 원으로 게임업계 1위를 지켰다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>EA, 사상 최대 LBO 마무리 단계.</b> 약 550억 달러(주당 $210) 규모의 EA 비공개 전환 거래가 6월 30일 종료 기한(long-stop date)을 앞두고 마무리 수순에 들어갔다. PIF·실버레이크·어피니티 파트너스 컨소시엄이 인수하며, 인수 직전 대규모 정리해고가 시작된 것으로 보도됐다. <a href=\"https://finance.yahoo.com/markets/stocks/articles/electronic-arts-reportedly-begins-mass-171003767.html\">Yahoo Finance</a> · <a href=\"https://tech-insider.org/ea-goes-private-55-billion-buyout-2026/\">Tech Insider</a>"},
+        {"html": "<b>2026년 글로벌 게임업계 해고 3,700명 돌파.</b> 올해 확인된 감원만 3,700여 명(비공개·스튜디오 폐쇄 포함 시 4,000명 이상)으로, 미국이 전체의 약 58%를 차지했다. Bungie, Epic Games가 큰 타격을 입었다. <a href=\"https://www.storyboard18.com/amp/gaming-news/gaming-industry-logs-over-3700-layoffs-in-2026-bungie-epic-games-among-hardest-hit-101789.htm\">Storyboard18</a>"},
+        {"html": "<b>소니, Bungie 자산 약 7.65억 달러 상각.</b> FY2025 실적에서 소니가 2022년 인수가($36억)의 20% 이상에 해당하는 평가손실을 인식했고, Bungie는 인수 이후 세 번째 정리해고를 준비 중이다. <a href=\"https://www.techtimes.com/articles/318519/20260616/gaming-industry-layoffs-spread-beyond-xbox-july-purge-threatens-sony-ea-studios.htm\">TechTimes</a>"},
+        {"html": "<b>넥슨, 국내 게임사 1위 유지.</b> 공정위 2026년 공시대상기업집단 지정 결과 넥슨이 공정자산총액 15.1조원으로 게임업계 1위를 지켰고, 크래프톤은 8.5조→9.2조원으로 약 8.8% 증가했다. <a href=\"https://www.inven.co.kr/webzine/news/?news=315979&site=111222\">인벤</a>"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>이번 주 출시작.</b> 6월 23일 Frostpunk 2 확장팩 'Breach of Trust'와 Devil May Cry 5(Switch 2)가, 24일 DEAD OR ALIVE 6 Last Round, 25일 Star Fox(Switch 2)가 출시됐다. <a href=\"https://www.dlcompare.com/gaming-news/this-week-s-video-game-releases-june-2026-week-26\">dlcompare</a>"},
+        {"html": "<b>6월 쇼케이스 시즌 총정리.</b> Summer Game Fest Live 2026(6/5), PlayStation State of Play, Xbox Games Showcase, Nintendo Direct가 연달아 열렸다. FF7 리메이크 최종편과 Resident Evil: Code Veronica 리메이크가 공개됐다. <a href=\"https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/\">VGC</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>모바일, 글로벌 게임 시장 절반 이상 차지.</b> 2026년 모바일 게임 시장은 약 1,070억 달러(전체의 ~52%)로 콘솔($480억)·PC($399억)를 앞섰다. <a href=\"https://tech-insider.org/mobile-gaming-market-2026/\">Tech Insider</a>"},
+        {"html": "<b>매출 1위는 왕자영요(Honor of Kings).</b> 25억 달러 이상으로 1위, PUBG Mobile이 20억 달러로 뒤를 이었다. 캐주얼 부문에서는 Royal Match가 Monopoly Go를 제치고 선두에 올랐다. <a href=\"https://www.businessofapps.com/data/top-grossing-games/\">Business of Apps</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>닌텐도 Switch 2 가격 인상 예고.</b> 9월 1일부터 $449.99 → $499.99로 인상되며, 8월 31일 이전 구매 시 $50 절약 가능하다. <a href=\"https://tech-insider.org/nintendo-switch-2-vs-ps5-vs-xbox-series-x-2026/\">Tech Insider</a>"},
+        {"html": "<b>Xbox 'reset' 선언.</b> 6월 10일 Xbox 경영진이 추가 감원 보도 속에 사업 전면 '리셋'을 천명했다. Gears E-Day는 10월 6일 Xbox/PC 타임드 독점으로 출시된다."}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

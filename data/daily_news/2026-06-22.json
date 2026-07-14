@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-22",
+  "weekday": "월",
+  "kicker": "글로벌",
+  "overview": "EA의 550억 달러 사모펀드 바이아웃이 규제 승인을 기다리는 가운데, 바이트댄스는 Moonton 매각을 사우디 Savvy Games와 협상 중이다. 국내에서는 넥슨·넷마블·크래프톤 등 빅3의 자산 규모가 모두 늘어났다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>EA, 550억 달러 사모펀드 바이아웃.</b> Affinity Partners·Silver Lake·사우디 PIF 컨소시엄이 주도하는 EA 인수가 게임 역사상 최대 규모이자 사상 최대 LBO로 기록될 전망. 규제 승인 대기 중이며 2분기 마감 예상. <a href=\"https://www.datasite.com/en/resources/insights/market-spotlight-will-the-ea-buyout-level-up-gaming-m-and-a\">Datasite</a>"},
+        {"html": "<b>바이트댄스, Moonton 매각 협상.</b> PUBG·모바일레전드 개발사 Moonton Technology를 사우디 Savvy Games Group에 60~70억 달러 규모로 매각하는 협상이 막바지 단계. <a href=\"https://investgame.net/news/digest/7-2026/\">InvestGame</a>"},
+        {"html": "<b>업계 감원 3,700명 돌파.</b> 미국이 전체의 58.2%(2,153명)로 진앙지. Bungie·Epic Games가 최대 타격. <a href=\"https://www.storyboard18.com/amp/gaming-news/gaming-industry-logs-over-3700-layoffs-in-2026-bungie-epic-games-among-hardest-hit-101789.htm\">Storyboard18</a>"},
+        {"html": "<b>Xbox '리셋' 선언.</b> 6월 10일 Xbox 경영진이 사업 전반의 '리셋'을 천명. 제품 라인업·스튜디오 존속·Game Pass 가격·멀티플랫폼 전략까지 재편하는 광범위한 구조조정 신호. <a href=\"https://tech-insider.org/xbox-layoffs-reset-2026/\">Tech Insider</a>"},
+        {"html": "<b>한국 빅3 자산 증가.</b> 공정위 기준 넥슨 자산 15.1조원(+7.3%, 40위), 넷마블 13조원(+10.5%), 크래프톤 9.2조원(+8.8%)으로 모두 성장. NC·넥슨·넷마블·크래프톤이 스타크래프트 IP 라이선스를 두고 경쟁 중이라는 보도. <a href=\"https://www.invenglobal.com/articles/21438/nexon-retains-top-spot-among-gaming-giants-krafton-significantly-expands-affiliates\">Inven Global</a>"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>킹덤하츠 IV 멀티플랫폼 확정.</b> PS5·Xbox Series·Switch 2·PC 동시 출시 발표(출시일 미정). <a href=\"https://www.gematsu.com/2026/06/kingdom-hearts-iv-confirmed-for-ps5-xbox-series-switch-2-and-pc\">Gematsu</a>"},
+        {"html": "<b>이번 주(6/22~26) 출시작.</b> Ashwood Valley(6/23), EMPULSE(6/24), The Backrooms: Forsaken(6/25) 등. <a href=\"https://www.purexbox.com/features/these-20plus-games-are-coming-to-xbox-next-week-june-22-26\">Pure Xbox</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>모바일 게임, 2026년 1,342억 달러 시장.</b> 전 세계 게임 매출의 절반 이상 차지. 중국($43B)·미국($37B)·일본($20B) 순. <a href=\"https://www.statista.com/outlook/amo/media/games/mobile-games/worldwide\">Statista</a>"},
+        {"html": "<b>최고 매출작은 왕자영요.</b> Honor of Kings이 25억 달러 이상으로 1위, PUBG Mobile 20억 달러로 2위. <a href=\"https://www.blog.udonis.co/mobile-marketing/mobile-games/top-grossing-mobile-games\">Udonis</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>FF7 리버스, Switch 2·Xbox 진출.</b> 6월 3일 Nintendo Switch 2와 Xbox Series로 출시. <a href=\"https://www.gamesradar.com/video-game-release-dates/\">GamesRadar</a>"},
+        {"html": "<b>2026 콘솔 라인업.</b> Switch 2 첫 풀시즌과 함께 GTA 6, Marvel's Wolverine, Metal Gear Solid Collection Vol 2 등 대형 타이틀 대기. <a href=\"https://www.gamespot.com/articles/2026-upcoming-games-release-schedule/1100-6534941/\">GameSpot</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

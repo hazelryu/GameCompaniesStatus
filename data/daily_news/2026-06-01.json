@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-01",
+  "weekday": "월",
+  "kicker": "글로벌",
+  "overview": "2025년 글로벌 게임 콘텐츠 매출이 약 1,956억 달러로 역대 최고치를 기록했으나, 같은 기간 전 세계 개발자의 28%(미국은 33%)가 일자리를 잃는 '기록적 수익·기록적 해고'의 역설이 이어지고 있다. 2025년 게임 M&A 거래 규모도 약 1,610억 달러로 사상 최대를 기록했다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>2025년 글로벌 게임 콘텐츠 매출 약 1,956억 달러로 역대 최고.</b> 같은 기간 전 세계 개발자의 28%(미국은 33%)가 일자리를 잃는 '기록적 수익·기록적 해고'의 역설이 이어지고 있다."},
+        {"html": "<b>번지, 6월 9일 데스티니2 개발 종료 앞두고 2026년 대규모 추가 감원 준비.</b> 2022년 36억 달러 인수 이후 누적 감원 규모가 수백 명에 달한다. <a href=\"https://www.metaintro.com/blog/sony-bungie-layoffs-destiny-2-sunset-2026\">Metaintro</a>"},
+        {"html": "<b>2022년 이후 업계 누적 감원 4만 4,000명 돌파.</b> 2026년 들어서도 약 2,000~3,000명이 추가로 해고됐다. 엠브레이서는 44개 스튜디오를 정리·매각하고 3개 독립 법인으로 분할 진행 중."},
+        {"html": "<b>2025년 게임 M&A 거래 규모 약 1,610억 달러로 사상 최대.</b> PIF·실버레이크 등의 550억 달러 EA 인수, 워너브러더스 관련 빅딜이 견인했으며, 2026년에도 사모펀드 주도 take-private 흐름이 강하게 이어질 전망. PocketGamer.biz"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>파이널 판타지 7 리버스, 6월 3일 Xbox Series X|S·닌텐도 스위치 2 출시.</b> 멀티플랫폼 합류. <a href=\"https://screenrant.com/june-2026-video-games-releases-schedule-lineup/\">ScreenRant</a>"},
+        {"html": "<b>닌텐도, 스위치2용 신작 스타폭스 6월 25일 출시 발표.</b> 스타폭스 64의 리메이크 작품. <a href=\"https://www.nintendo.com/en-gb/News/2026/June/Upcoming-games-June-2026-3110313.html\">Nintendo UK</a>"},
+        {"html": "<b>오픈월드 크래프팅 게임 Solarpunk, 6월 8일 Xbox 게임패스 데이원 출시 확정.</b> Beastro·Frog Sqwad·Starseeker(6/11)도 데이원 라인업. <a href=\"https://www.cbr.com/xbox-game-pass-june-2026-full-list/\">CBR</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>2026년 모바일 게임 시장 약 1,330억 달러.</b> 전체 게임 매출의 절반 이상. 중국(43B)·미국(37B)·일본(20B) 순, RPG(24B)가 최고 매출 장르. <a href=\"https://www.businessofapps.com/data/mobile-games-revenue/\">Business of Apps</a>"},
+        {"html": "<b>넷이즈 라이선스 레이싱 게임 Racing Master, 5월 8일 글로벌 정식 출시.</b> 6월엔 Sonic Rumble, Pokémon Champions 등 대형 타이틀 출시 예정. <a href=\"https://gamingonphone.com/news/all-mobile-games-android-and-ios-releasing-in-june-2026/\">GamingonPhone</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>2026년은 닌텐도 스위치 2의 첫 풀 시즌.</b> 스타폭스 등 전용 강세 타이틀과 함께 연중 추가 발표 이어질 전망. <a href=\"https://www.gamesradar.com/video-game-release-dates/\">GamesRadar</a>"},
+        {"html": "<b>Xbox 게임패스, 6월 데이원 신작 잇따라 확정하며 구독 라인업 강화.</b> <a href=\"https://www.cbr.com/xbox-game-pass-june-2026-full-list/\">CBR</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

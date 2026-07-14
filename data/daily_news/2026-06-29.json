@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-29",
+  "weekday": "월",
+  "kicker": "한국 중심 + 글로벌",
+  "overview": "3N2K(넥슨·넷마블·엔씨·크래프톤·카카오게임즈) 구도가 넥슨·크래프톤 양강 체제로 재편되며 실적 양극화가 뚜렷합니다. 무게중심이 모바일에서 PC·콘솔로 이동 중이고, 동시에 넥슨 주도 투자펀드·카카오게임즈 M&A 드라이브 등 자본 재배치가 활발합니다. 신작은 자체 IP·방치형(키우기) RPG가 매출 차트를 장악하는 흐름입니다.",
+  "sections": [
+    {
+      "title": "한국 M&A · 투자 · 비즈니스",
+      "items": [
+        {"html": "<b>넥슨 주도 2,500억 원 게임 투자펀드 조성.</b> 정부·서울시 AI 지원과 맞물려 차세대 개발사·글로벌 IP에 시드~시리즈A 투자. 넥슨은 후속 단계에 별도 1,300억 원 투자 계획. <a href=\"https://www.sedaily.com/article/20060849\">서울경제</a>"},
+        {"html": "<b>카카오게임즈 경영진 교체 → 흑자전환 시동.</b> 넥슨·라인게임즈 출신 김태환 대표가 글로벌·전략투자·M&A 총괄, 일본·동남아 시장 겨냥. <a href=\"https://www.hankyung.com/article/2026062823141\">한국경제</a>"},
+        {"html": "<b>컴투스, 마나코어·노바팩토리 인수.</b> '열렘전사' 등에 이어 방치형 RPG 포트폴리오 확장. <a href=\"https://www.gamemeca.com/view.php?gid=1536975\">게임메카</a>"},
+        {"html": "<b>액션스퀘어, 장현국 전 위메이드 대표로부터 50억+ 전략투자 유치.</b> 2026년 최대주주 등극 예정. <a href=\"https://www.sedaily.com/article/20060849\">서울경제</a>"}
+      ]
+    },
+    {
+      "title": "한국 신작 출시 & 업데이트",
+      "items": [
+        {"html": "<b>넥슨 '메이플 키우기'.</b> 출시 1주 만에 구글·애플 양대 마켓 매출 1위. 방치형 RPG 강세 상징. <a href=\"https://www.gamemeca.com/view.php?gid=1768218\">게임메카</a>"},
+        {"html": "<b>넷마블 '솔: 인챈트'.</b> '리니지M' 핵심 개발진(알트나인) 제작 MMORPG, 넷마블 퍼블리싱. 상반기 신작 6종 라인업의 핵심. <a href=\"https://www.digitaltoday.co.kr/news/articleView.html?idxno=641536\">디지털투데이</a>"},
+        {"html": "<b>카카오게임즈 '오딘' 5주년 업데이트.</b> 애플 1위·구글 매출 2위 탈환. <a href=\"https://www.gamemeca.com/view.php?gid=1777069\">게임메카</a>"},
+        {"html": "<b>드림에이지 신작 '아키텍트'.</b> 리니지를 제치고 구글 매출 3위 기록. <a href=\"https://www.gamemeca.com/view.php?gid=1767713\">게임메카</a>"},
+        {"html": "<b>리니지 리마스터 '정복자의 첨탑' 사전예약 개시.</b> <a href=\"https://www.gamemeca.com/view.php?gid=1777003\">게임메카</a>"},
+        {"html": "<b>넥슨 '카트라이더2' 서비스 종료.</b> 출시 2년 만의 철수. <a href=\"https://www.hankyung.com/article/202506168809g\">한국경제</a>"},
+        {"html": "<b>한국 게임사들의 PC·콘솔·글로벌 시장 공략이 성과로.</b> 크래프톤 자회사 Unknown Worlds의 'Subnautica 2'는 얼리액세스 5일 만에 누적 400만 장, 펄어비스 '붉은사막'은 출시 26일 만에 500만 장을 팔며 한국 콘솔 게임 역대 최고 속도를 냈다. 크래프톤은 '눈물을 마시는 새' 기반 'Project Windless'를, 넥슨게임즈는 '전우치' 기반 'Woochi the Wayfarer'를 개발 중. <a href=\"https://www.digitaltoday.co.kr/en/view/59635/korean-games-hit-console-sales-overseas-acquisitions-and-in-house-development-pay-off\">Digital Today</a>"}
+      ]
+    },
+    {
+      "title": "글로벌 동향",
+      "items": [
+        {"html": "<b>EA, 사우디 PIF 컨소시엄에 약 $55B(77조 원) 인수.</b> 실버레이크·어피니티 파트너스 참여, 주당 $210(25% 프리미엄). 비상장 전환, 사상 최대 사모 인수. <a href=\"https://www.gamemeca.com/view.php?gid=1766718\">게임메카</a>"},
+        {"html": "<b>넷플릭스, 워너브라더스 스튜디오·HBO 인수 추진.</b> 게임·IP 지형 변화 가능성. <a href=\"https://www.gamesradar.com/video-game-release-dates/\">GamesRadar</a>"},
+        {"html": "<b>Summer Game Fest 2026.</b> FF7 리메이크 완결편·레지던트 이블 '코드 베로니카' 리메이크 공개, PS State of Play·Xbox Showcase·Nintendo Direct 연이어 개최. <a href=\"https://www.gamesradar.com/video-game-release-dates/\">GamesRadar</a>"},
+        {"html": "<b>'펠월드' 7월 10일 정식 출시 전환.</b> 얼리액세스 2.5년 만. PC·PS5. <a href=\"https://www.gamemeca.com/view.php?gid=1776138\">게임메카</a>"},
+        {"html": "<b>2025년 글로벌 게임 매출 사상 최고($195.6B)에도 감원 지속.</b> 매출·고용 양극화 심화. <a href=\"https://luminatedata.com/blog/gaming-industry-off-to-a-shaky-2026/\">Luminate</a>"},
+        {"html": "<b>글로벌 게임 업계 누적 해고 3,700명 돌파.</b> 미국이 약 58%(2,153명)로 가장 큰 비중, Bungie·Epic Games가 타격이 컸다. <a href=\"https://www.storyboard18.com/amp/gaming-news/gaming-industry-logs-over-3700-layoffs-in-2026-bungie-epic-games-among-hardest-hit-101789.htm\">Storyboard18</a>"},
+        {"html": "<b>구조조정 확산 조짐.</b> 7월 1일을 기점으로 Sony·EA·BioWare에서 추가 감원·스튜디오 정리 가능성. Ninja Theory 폐쇄 확정·Arkane Lyon이 다음 차례로 거론. <a href=\"https://www.techtimes.com/articles/318519/20260616/gaming-industry-layoffs-spread-beyond-xbox-july-purge-threatens-sony-ea-studios.htm\">TechTimes</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": {
+    "meta": "기준: 2026년 5월 집계(모바일인덱스, 실시간 페이지 자동수집 제약으로 대체) · 출처: <a href=\"https://gametrends.co.kr/best-mobile-games/\">게임트렌드</a> · <a href=\"https://www.openads.co.kr/content/contentDetail?contsId=19410\">오픈애즈</a>",
+    "rows": [
+      {"rank": 1, "game": "라스트 워(Last War)", "note": "월매출(추정) 356억"},
+      {"rank": 2, "game": "WOS(Whiteout Survival)", "note": "월매출(추정) 346억"},
+      {"rank": 3, "game": "메이플 키우기", "note": "월매출(추정) 256억"}
+    ]
+  }
+}

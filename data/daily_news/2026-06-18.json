@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-18",
+  "weekday": "목",
+  "kicker": "글로벌",
+  "overview": "Xbox 경영진의 사업 '리셋' 선언 이후 감원 한파가 Sony·EA로 확산 중이며, Bungie는 최대 50% 감원설이 도는 가운데 Ninja Theory 폐쇄가 확정됐다. 반면 한국 게임 빅3(크래프톤·넥슨·넷마블)는 분기 매출 1조 원을 넘기며 호실적을 이어갔다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>Xbox, 사업 전반 '리셋' 선언.</b> 6월 10일. Activision Blizzard 인수에 687억 달러를 쏟은 뒤 어떤 제품·스튜디오를 유지할지, Game Pass 가격과 멀티플랫폼 전략을 재검토한다. <a href=\"https://tech-insider.org/xbox-layoffs-reset-2026/\">Tech Insider</a>"},
+        {"html": "<b>해고 한파, Xbox 넘어 Sony·EA로 확산.</b> Sony의 Bungie는 이번 여름 최대 50% 감원설, Ninja Theory 폐쇄 확정, Arkane Lyon이 다음 차례로 거론. <a href=\"https://www.techtimes.com/articles/318519/20260616/gaming-industry-layoffs-spread-beyond-xbox-july-purge-threatens-sony-ea-studios.htm\">TechTimes</a>"},
+        {"html": "<b>Sony, Bungie 자산 약 7.65억 달러 상각.</b> FY2025 실적에서 반영(인수가 36억 달러의 20% 이상). 3월 출시한 Marathon의 초기 흥행 실패가 주원인. <a href=\"https://www.gurufocus.com/news/8921069/layoffs-loom-at-sonys-bungie-amid-game-titles-challenges\">GuruFocus</a>"},
+        {"html": "<b>M&A 활황.</b> Q1 2026 게임 M&A는 52건·77억 달러 규모로, Savvy Games의 Moonton 인수(60억 달러), Scopely의 Loom Games 인수(10억 달러), NCSoft의 JustPlay 지분 70% 인수(2억200만 달러)가 주도. PIF·Silver Lake의 EA LBO(550억 달러)는 6월 마감 예정. <a href=\"https://ionanalytics.com/insights/mergermarket/its-in-the-game-how-a-usd-55bn-power-play-may-trigger-more-ma/\">ION Analytics</a>"},
+        {"html": "<b>한국 빅3 호실적.</b> Krafton은 Q1 매출 약 1.21조 원(+38% YoY), Nexon과 함께 분기 매출 1조 원 돌파. Netmarble은 영업이익 전년 대비 1,243% 급증. NCSoft·Nexon·Netmarble·Krafton은 StarCraft IP 라이선스 경쟁 중. <a href=\"https://www.koreaherald.com/article/10489159\">Korea Herald</a>"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>The Adventures of Elliot: The Millennium Tales 출시(6/18).</b> 고대의 미스터리를 따라가는 내러티브 중심 판타지 RPG. <a href=\"https://www.dlcompare.com/gaming-news/this-week-s-video-game-releases-june-2026-week-25\">DLCompare</a>"},
+        {"html": "<b>EA Sports UFC 6 출시(6/19).</b> 이번 주 최대 메인스트림 신작, 선수 로스터·격투 시스템 개편. <a href=\"https://www.dlcompare.com/gaming-news/this-week-s-video-game-releases-june-2026-week-25\">DLCompare</a>"},
+        {"html": "<b>Kingdom Hearts IV, PS5·Xbox Series·Switch 2·PC 동시 출시 확정.</b> <a href=\"https://www.gematsu.com/2026/06/kingdom-hearts-iv-confirmed-for-ps5-xbox-series-switch-2-and-pc\">Gematsu</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>2026년 모바일 게임 시장 약 1,070억 달러.</b> 전체 게임 시장의 52% 차지, 콘솔(480억)·PC(399억) 앞섬. <a href=\"https://www.prismnews.com/hobbies/mobile-gaming/mobile-gaming-nears-107-billion-but-growth-remains-uneven\">Prism News</a>"},
+        {"html": "<b>Google Play에서는 Monopoly Go가 2년 연속 매출 1위(5억9,100만 달러).</b> <a href=\"https://www.businessofapps.com/data/top-grossing-games/\">Business of Apps</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>PlayStation State of Play·Xbox Games Showcase 2026·Nintendo Direct 연쇄 개최.</b> <a href=\"https://www.gamespot.com/articles/nintendo-direct-june-2026-all-the-biggest-announcements-and-games/\">GameSpot</a>"},
+        {"html": "<b>하반기 기대작.</b> Grand Theft Auto VI, Marvel's Wolverine, Metal Gear Solid Collection Vol. 2 등이 대기 중. <a href=\"https://www.pcgamer.com/games/pc-game-release-dates-june-2026/\">PC Gamer</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}

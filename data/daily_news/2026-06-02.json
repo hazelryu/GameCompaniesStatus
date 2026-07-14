@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-02",
+  "weekday": "화",
+  "kicker": "글로벌",
+  "overview": "번지가 6월 9일 데스티니 2 개발 종료를 앞두고 추가 감원을 준비 중이며, 텐센트는 소수 지분 투자에서 벗어나 해외 게임사 경영권 인수로 전략을 선회했다. 한국에서는 크래프톤·넷마블이 1분기 사상 최대 실적을 기록했다.",
+  "sections": [
+    {
+      "title": "산업 · 비즈니스 동향",
+      "items": [
+        {"html": "<b>번지, 데스티니 2 개발 종료 앞두고 대규모 추가 감원 준비.</b> 6월 9일 최종 콘텐츠 업데이트 예정, 후속작 '데스티니 3' 계획은 없는 상태. <a href=\"https://www.metaintro.com/blog/sony-bungie-layoffs-destiny-2-sunset-2026\">Metaintro</a>"},
+        {"html": "<b>글로벌 게임 매출 1,956억 달러 사상 최대.</b> 2022년 이후 누적 4.4만 명 이상 감원되는 '기록적 이익·기록적 해고'의 역설이 2026년에도 이어지고 있다."},
+        {"html": "<b>텐센트, 해외 게임사 경영권·과반 지분 인수로 전략 선회.</b> 소수 지분 투자에서 벗어나 '공격적으로' 완전 인수를 추진(2025년 넥슨게임즈, 유비소프트 신설 자회사 25% 등 인수 이력). <a href=\"https://www.videogameschronicle.com/news/tencent-is-reportedly-refocusing-on-aggressively-seeking-full-games-company-acquisitions/\">VGC</a>"},
+        {"html": "<b>한국 게임사 글로벌 호실적.</b> 크래프톤은 1분기 매출 8,742억 원(+31.3%)·영업이익 4,573억 원(+47.3%)으로 사상 최대, 넷마블은 영업이익 497억 원(+1243.2%)으로 어닝 서프라이즈. <a href=\"https://www.koreaherald.com/article/10489159\">Korea Herald</a>"}
+      ]
+    },
+    {
+      "title": "신작 · 출시 소식",
+      "items": [
+        {"html": "<b>「파이널 판타지 7 리버스」, 6월 3일 Xbox Series X|S·닌텐도 스위치 2 출시.</b> <a href=\"https://screenrant.com/final-fantasy-7-rebirth-june-2026-release-psa/\">ScreenRant</a>"},
+        {"html": "<b>「고딕 1 리메이크」, 6월 5일 PC·PS5·Xbox 출시.</b> Alkimia Interactive 개발, THQ Nordic 배급. 이달의 간판 RPG. <a href=\"https://www.gamermarkt.com/blog/june-2026-game-releases-calendar/\">GamerMarkt</a>"},
+        {"html": "<b>6월 5일 서머 게임 페스트 시작.</b> PlayStation State of Play, Xbox 게임 쇼케이스 등 대형 행사 연쇄 예정. <a href=\"https://www.cinelinx.com/games/game-news/june-2026-video-game-release-dates/\">Cinelinx</a>"}
+      ]
+    },
+    {
+      "title": "모바일",
+      "items": [
+        {"html": "<b>2026년 모바일 게임 시장 약 1,342억 달러.</b> 전체 게임 매출의 절반 이상, 2030년 1,640억 달러 전망(연 5.13%). <a href=\"https://www.statista.com/outlook/amo/media/games/mobile-games/worldwide\">Statista</a>"},
+        {"html": "<b>최고 매출 모바일 게임 「왕자영요」(25억 달러+), 「PUBG Mobile」(20억 달러) 순.</b> 캐주얼 1위는 「로얄 매치」(13억 달러). <a href=\"https://www.businessofapps.com/data/top-grossing-games/\">Business of Apps</a>"}
+      ]
+    },
+    {
+      "title": "PC · 콘솔",
+      "items": [
+        {"html": "<b>6월 PC·PS5·Xbox·스위치2로 25종 이상 신작 출시.</b> 닌텐도 최대 독점작은 6/25 스위치2 「스타폭스」(비주얼 전면 개편·8인 온라인 멀티). <a href=\"https://screenrant.com/june-2026-video-games-releases-schedule-lineup/\">ScreenRant</a>"},
+        {"html": "<b>스퀘어에닉스 신작 HD-2D 액션 RPG 「엘리엇의 모험: 밀레니엄 테일즈」, 6월 18일 출시.</b> <a href=\"https://jupitall.com/2026/05/23/june-2026-video-game-releases-all-the-new-games-coming-to-pc-ps5-xbox-and-switch-2/\">Jupitall</a>"}
+      ]
+    }
+  ],
+  "mobileRanking": null
+}
