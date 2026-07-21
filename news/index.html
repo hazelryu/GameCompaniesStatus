@@ -1,4 +1,4 @@
-<title>데일리 게임 산업 브리핑 — K-Game Business Wire</title>
+<title>게임 산업 뉴스 — K-Game Business Wire</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -53,6 +53,29 @@
   .sub { font-size: 0.95rem; color: var(--ink-soft); max-width: 58ch; margin: 0 0 1.6rem; }
   hr.rule { border: none; border-top: 3px solid var(--ink); margin: 0 0 1.4rem; }
 
+  .tabs { display: flex; gap: 0.3rem; background: var(--paper-sunk); border: 1px solid var(--rule); border-radius: 8px; padding: 3px; width: fit-content; margin-bottom: 1.8rem; }
+  .tab-btn { border: none; background: transparent; color: var(--ink-soft); font-size: 0.83rem; font-weight: 600; font-family: inherit; padding: 0.45rem 1rem; border-radius: 6px; cursor: pointer; }
+  .tab-btn.is-active { background: var(--accent); color: var(--paper-raised); }
+  .panel[hidden] { display: none; }
+
+  .list { border-top: 1px solid var(--rule); }
+  .issue {
+    display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem;
+    padding: 1.3rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit;
+  }
+  .issue:hover .issue-title { color: var(--accent); }
+  .issue-date { font-family: Consolas, monospace; font-size: 0.82rem; color: var(--ink-faint); padding-top: 0.2rem; }
+  .issue-title { font-family: Batang, "Nanum Myeongjo", Georgia, serif; font-size: 1.2rem; margin: 0 0 0.3rem; }
+  .issue-desc { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.55; margin: 0; }
+  .issue-latest {
+    display: inline-block; font-family: Consolas, monospace; font-size: 0.62rem;
+    letter-spacing: 0.05em; text-transform: uppercase; padding: 0.1rem 0.4rem;
+    background: var(--accent); color: var(--paper-raised); border-radius: 2px; margin-left: 0.5rem;
+  }
+  @media (max-width: 520px) {
+    .issue { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+
   .news-controls {
     display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem;
     background: var(--paper-raised); border: 1px solid var(--rule); border-radius: 8px; padding: 0.8rem 1rem; margin-bottom: 1.4rem;
@@ -101,49 +124,84 @@
     <span class="site-nav-brand">VNG BD &middot; K-Game Intelligence</span>
     <nav class="site-nav-links" aria-label="사이트 이동">
       <a href="../dashboard/">회사 실적</a>
-      <a href="./" class="is-current">데일리 뉴스</a>
-      <a href="../monthly-recap/">월간 리캡</a>
+      <a href="./" class="is-current">뉴스</a>
     </nav>
   </div>
 </header>
 
 <div class="wrap">
-  <div class="kicker">K-GAME BUSINESS WIRE &middot; DAILY BRIEFING</div>
-  <h1>데일리 게임 산업 브리핑</h1>
-  <p class="sub">한국 중심 게임 산업 뉴스를 매일 정리합니다. 산업/비즈니스, 신작/출시, 모바일 순위, 글로벌 소식 순으로 구성됩니다.</p>
+  <div class="kicker">K-GAME BUSINESS WIRE</div>
+  <h1>게임 산업 뉴스</h1>
+  <p class="sub">한국 게임 산업 소식을 데일리 브리핑과 월간 리캡으로 정리합니다.</p>
   <hr class="rule" />
 
-  <div class="news-controls">
-    <span class="eyebrow">데일리 게임 산업 브리핑</span>
-    <div class="news-nav">
-      <button class="news-step" id="newsPrev" aria-label="이전 날짜">&#8249;</button>
-      <select id="newsDateSelect" aria-label="날짜 선택"></select>
-      <button class="news-step" id="newsNext" aria-label="다음 날짜">&#8250;</button>
-    </div>
-    <span class="news-kicker-tag" id="newsKickerTag"></span>
-    <p class="news-note">매일 오전 11:30(KST) 자동 수집·요약. 초기 수집 기간(2026년 6월)은 매일 실행되지 못해 날짜가 듬성듬성 비어 있을 수 있습니다.</p>
-  </div>
+  <nav class="tabs" role="tablist" aria-label="보기 전환">
+    <button class="tab-btn is-active" id="tabBtnDaily" role="tab" aria-selected="true" aria-controls="panelDaily">데일리 뉴스</button>
+    <button class="tab-btn" id="tabBtnMonthly" role="tab" aria-selected="false" aria-controls="panelMonthly">월간 리캡</button>
+  </nav>
 
-  <div id="newsLoading" class="no-results" hidden>불러오는 중…</div>
-  <div id="newsError" class="no-results" hidden>이 날짜의 데이터를 불러오지 못했습니다.</div>
-
-  <div id="newsContent">
-    <p class="news-overview" id="newsOverview"></p>
-    <div id="newsSections"></div>
-    <div id="newsRankingWrap" hidden>
-      <h2 class="news-section-title">한국 모바일 매출 순위</h2>
-      <div class="rank-wrap">
-        <table class="rank" id="newsRankTable"><thead><tr><th>#</th><th>게임</th><th>비고</th></tr></thead><tbody></tbody></table>
+  <section id="panelDaily" class="panel" role="tabpanel" aria-labelledby="tabBtnDaily">
+    <div class="news-controls">
+      <span class="eyebrow">데일리 게임 산업 브리핑</span>
+      <div class="news-nav">
+        <button class="news-step" id="newsPrev" aria-label="이전 날짜">&#8249;</button>
+        <select id="newsDateSelect" aria-label="날짜 선택"></select>
+        <button class="news-step" id="newsNext" aria-label="다음 날짜">&#8250;</button>
       </div>
-      <p class="rank-caption" id="newsRankingMeta"></p>
+      <span class="news-kicker-tag" id="newsKickerTag"></span>
+      <p class="news-note">매일 오전 11:30(KST) 자동 수집·요약. 초기 수집 기간(2026년 6월)은 매일 실행되지 못해 날짜가 듬성듬성 비어 있을 수 있습니다.</p>
     </div>
-  </div>
 
-  <footer>VNG BD Intelligence &middot; 매일 11:30 자동 생성 &middot; <a href="../monthly-recap/" style="color:var(--accent);">월간 리캡 보기 &rarr;</a></footer>
+    <div id="newsLoading" class="no-results" hidden>불러오는 중…</div>
+    <div id="newsError" class="no-results" hidden>이 날짜의 데이터를 불러오지 못했습니다.</div>
+
+    <div id="newsContent">
+      <p class="news-overview" id="newsOverview"></p>
+      <div id="newsSections"></div>
+      <div id="newsRankingWrap" hidden>
+        <h2 class="news-section-title">한국 모바일 매출 순위</h2>
+        <div class="rank-wrap">
+          <table class="rank" id="newsRankTable"><thead><tr><th>#</th><th>게임</th><th>비고</th></tr></thead><tbody></tbody></table>
+        </div>
+        <p class="rank-caption" id="newsRankingMeta"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="panelMonthly" class="panel" hidden role="tabpanel" aria-labelledby="tabBtnMonthly">
+    <p class="sub" style="margin-top:-0.6rem;">한국 게임 산업 M&amp;A·투자·신작 소식을 매월 1일 정리합니다. 최신 호부터 정렬.</p>
+    <div class="list">
+      <a class="issue" href="recaps/2026-07.html">
+        <div class="issue-date">2026.07</div>
+        <div>
+          <h2 class="issue-title">자본이 다시 짠 K-게임 지도<span class="issue-latest">Latest</span></h2>
+          <p class="issue-desc">위메이드·카카오게임즈·원스토어 경영권 이전, 솔: 인챈트 매출 1위 질주, 붉은사막 600만 장, 게임스컴 2026 출격 라인업.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>VNG BD Intelligence &middot; 데일리 뉴스는 매일 11:30, 월간 리캡은 매월 1일 자동 생성</footer>
 </div>
 
 <script>
 (function(){
+  var tabBtnDaily = document.getElementById("tabBtnDaily");
+  var tabBtnMonthly = document.getElementById("tabBtnMonthly");
+  var panelDaily = document.getElementById("panelDaily");
+  var panelMonthly = document.getElementById("panelMonthly");
+
+  function activate(btn, panel){
+    [[tabBtnDaily, panelDaily], [tabBtnMonthly, panelMonthly]].forEach(function(pair){
+      var isActive = pair[0] === btn;
+      pair[0].classList.toggle("is-active", isActive);
+      pair[0].setAttribute("aria-selected", isActive ? "true" : "false");
+      pair[1].hidden = !isActive;
+    });
+  }
+  tabBtnDaily.addEventListener("click", function(){ activate(tabBtnDaily, panelDaily); });
+  tabBtnMonthly.addEventListener("click", function(){ activate(tabBtnMonthly, panelMonthly); });
+
   var NEWS_BASE = new URL("daily/", document.baseURI).href;
   var newsDates = [];
   var newsCache = {};
