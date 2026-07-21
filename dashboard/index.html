@@ -971,7 +971,7 @@
       }).join("");
       tooltipEl.innerHTML = html;
     }
-    showTooltip(labels.length-1);
+    tooltipEl.style.display = "none";
 
     var hit = document.getElementById(opts.svgHolderId+'_hit');
     var cross = document.getElementById(opts.svgHolderId+'_cross');
@@ -985,11 +985,17 @@
       cross.setAttribute("x1", X(idx).toFixed(1));
       cross.setAttribute("x2", X(idx).toFixed(1));
       cross.style.display = "block";
+      tooltipEl.style.display = "block";
+      // keep the tooltip on the opposite side of the hovered point so it doesn't cover the lines being inspected
+      var onRightHalf = idx > xs/2;
+      tooltipEl.style.left = onRightHalf ? "8px" : "auto";
+      tooltipEl.style.right = onRightHalf ? "auto" : "8px";
       showTooltip(idx);
     }
     hit.addEventListener("mousemove", function(e){ handleMove(e.clientX); });
+    hit.addEventListener("touchstart", function(e){ if(e.touches[0]) handleMove(e.touches[0].clientX); }, {passive:true});
     hit.addEventListener("touchmove", function(e){ if(e.touches[0]) handleMove(e.touches[0].clientX); e.preventDefault(); }, {passive:false});
-    hit.addEventListener("mouseleave", function(){ cross.style.display="none"; showTooltip(labels.length-1); });
+    hit.addEventListener("mouseleave", function(){ cross.style.display="none"; tooltipEl.style.display="none"; });
 
     // legend
     var legendEl = document.getElementById(opts.legendId);
