@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-13",
+  "label": "2026-07-13 (월)",
+  "gametrics": [
+    [1,"리그 오브 레전드","Riot Games (Tencent)","MOBA","34.01%"],
+    [2,"배틀그라운드","KRAFTON, Inc.","배틀로얄·FPS","8.24%"],
+    [3,"리니지 클래식","NC Corporation","RPG","7.44%"],
+    [4,"FC온라인","NEXON Company","스포츠","6.99%"],
+    [5,"발로란트","Riot Games","FPS","6.35%"],
+    [6,"메이플스토리","NEXON Company","RPG","5.37%"],
+    [7,"오버워치","Blizzard","FPS","5.23%"],
+    [8,"서든어택","NEXON Company","FPS","4.96%"],
+    [9,"로스트아크","Smilegate RPG","RPG","2.42%"],
+    [10,"스타크래프트","Blizzard","RTS","1.73%"]
+  ],
+  "steamKr": [
+    [1,"PUBG: BATTLEGROUNDS","KRAFTON","배틀로얄·슈터","2017","krafton"],
+    [2,"Palworld","Pocketpair","서바이벌·크리처","2024",null],
+    [3,"MECCHA CHAMELEON","인디 개발사","파티·숨바꼭질","2026",null],
+    [4,"Limbus Company","Project Moon","RPG·가챠","2023",null],
+    [5,"Granblue Fantasy: Relink","Cygames","액션RPG","2024",null],
+    [6,"Counter-Strike 2","Valve","FPS","2023",null],
+    [7,"Once Human","NetEase","서바이벌","2024",null],
+    [8,"Eternal Return","Nimble Neuron (Krafton 계열)","MOBA·배틀로얄","2021","krafton"],
+    [9,"Assassin's Creed Black Flag Resynced","Ubisoft","액션어드벤처","2026",null],
+    [14,"Warframe","Digital Extremes","루터슈터","2013",null],
+    [16,"Apex Legends","Respawn/EA","배틀로얄FPS","2019",null],
+    [19,"Where Winds Meet","Everstone Studio","무협액션","2025",null],
+    [20,"Wuthering Waves","Kuro Games","가챠액션RPG","2024",null]
+  ],
+  "steamGlobal": [
+    [1,"Counter-Strike 2",583181,1266345],
+    [2,"Palworld",537057,825513],
+    [3,"TBH: Task Bar Hero",267834,331062],
+    [4,"Dota 2",235592,751549],
+    [5,"PUBG: BATTLEGROUNDS",157697,721160],
+    [6,"Marvel Rivals",140493,144082],
+    [7,"Bongo Cat",135787,178107],
+    [8,"FiveM",121938,180556],
+    [9,"EA SPORTS FC 26",105941,126711],
+    [10,"The Binding of Isaac: Rebirth",80854,141157]
+  ]
+}

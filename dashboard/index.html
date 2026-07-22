@@ -96,8 +96,12 @@
         <span class="scrubber-eyebrow">기준일 &middot; 모바일인덱스 실시간 매출 순위</span>
         <span class="scrubber-value" id="rankDateValue">2026-07-14</span>
       </div>
-      <select id="rankDateSelect" aria-label="날짜 선택"></select>
-      <p class="rank-note">기준 스냅샷: 2026-07-13(1~20위, 기존 컬럼) → 2026-07-14(전체, 확장 컬럼). <b class="hl-new-swatch">노란 강조</b>는 2026년 출시 신작이거나 지난 스냅샷에 없던 신규 Top20 진입작입니다 — 특정 회사 소속 여부와는 무관합니다. 21위 밖 타이틀은 이번이 첫 수집이라 순위변동을 비교할 기준이 없어 "최초수집"으로 표시됩니다.</p>
+      <div class="scrubber-nav">
+        <button class="scrub-step" id="rankPrev" aria-label="이전 날짜">&#8249;</button>
+        <select id="rankDateSelect" aria-label="날짜 선택"></select>
+        <button class="scrub-step" id="rankNext" aria-label="다음 날짜">&#8250;</button>
+      </div>
+      <p class="rank-note">매주 새 날짜가 누적됩니다 — 드롭다운이나 ‹›로 과거 스냅샷을 확인할 수 있습니다. <b class="hl-new-swatch">노란 강조</b>는 2026년 출시 신작이거나 지난 스냅샷에 없던 신규 Top20 진입작입니다 — 특정 회사 소속 여부와는 무관합니다. 21위 밖 타이틀은 순위변동을 비교할 기준이 없는 경우 "최초수집"으로 표시됩니다.</p>
     </div>
 
     <div class="search-row">
@@ -133,9 +137,14 @@
     <div class="rank-controls">
       <div class="scrubber-label">
         <span class="scrubber-eyebrow">PC방 점유율 기준일</span>
-        <span class="scrubber-value">2026-07-13 (월)</span>
+        <span class="scrubber-value" id="pcDateValue">2026-07-13 (월)</span>
       </div>
-      <p class="rank-note">게임트릭스 무료 데이터는 Top10까지만 공개됩니다 (11~20위는 유료 회원 전용). 스팀 순위는 지역 자동감지(대한민국) Top Sellers와, 참고용 전세계 동시접속 순위를 함께 보여줍니다.</p>
+      <div class="scrubber-nav">
+        <button class="scrub-step" id="pcPrev" aria-label="이전 날짜">&#8249;</button>
+        <select id="pcDateSelect" aria-label="날짜 선택"></select>
+        <button class="scrub-step" id="pcNext" aria-label="다음 날짜">&#8250;</button>
+      </div>
+      <p class="rank-note">매주 새 날짜가 누적됩니다 — 드롭다운이나 ‹›로 과거 스냅샷을 확인할 수 있습니다. 게임트릭스 무료 데이터는 Top10까지만 공개됩니다 (11~20위는 유료 회원 전용). 스팀 순위는 지역 자동감지(대한민국) Top Sellers와, 참고용 전세계 동시접속 순위를 함께 보여줍니다.</p>
     </div>
 
     <div class="rank-tables">
@@ -316,7 +325,8 @@
 
   .rank-controls{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin-bottom:16px; display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px;}
   .rank-controls .scrubber-label{flex:1 1 260px; margin:0;}
-  #rankDateSelect{font-size:13px; border:1px solid var(--border); background:var(--page); color:var(--ink); border-radius:6px; padding:6px 10px;}
+  .scrubber-nav{display:flex; align-items:center; gap:6px; flex:none;}
+  #rankDateSelect, #pcDateSelect{font-size:13px; border:1px solid var(--border); background:var(--page); color:var(--ink); border-radius:6px; padding:6px 10px;}
   .rank-note{flex-basis:100%; font-size:11.5px; color:var(--muted); margin:0;}
 
   .rank-tables{display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start;}
@@ -708,12 +718,15 @@
     return t.replace(/\(.*?\)/g,"").split(":")[0].split("™")[0].trim();
   }
 
-  function rankChangeCell(store, title, rank, year){
+  // prevMap: {normalizedTitle: prevRank} lookup for whatever the comparison baseline is —
+  // either PREV_SNAPSHOT (the one hardcoded pre-archive baseline) or a map built from the
+  // previous accumulated snapshot in the rankings archive (see buildPrevMap below).
+  function rankChangeCell(prevMap, title, rank, year){
     var isNewRelease = (year === "2026");
     if(rank === "-" || rank === undefined){
       return { html: '<span class="rank-unk">순위 미확인</span>', isNew: isNewRelease };
     }
-    var prevMap = PREV_SNAPSHOT[store] || {};
+    prevMap = prevMap || {};
     var prevRank = prevMap[normTitle(title)];
     if(prevRank !== undefined){
       var d = prevRank - rank;
@@ -1132,11 +1145,11 @@
     return v;
   }
 
-  function renderRankTable(tbodyId, rows, store){
+  function renderRankTable(tbodyId, rows, prevMap){
     var tbody = document.querySelector("#"+tbodyId+" tbody");
     tbody.innerHTML = rows.map(function(r){
       var rank=r[0], title=r[1], pub=r[2], genre=r[3], year=r[4], monthly=r[5], cum=r[6], mau=r[7], cid=r[8];
-      var rc = rankChangeCell(store, title, rank, year);
+      var rc = rankChangeCell(prevMap, title, rank, year);
       var cls = rc.isNew ? "hl-new" : "";
       var dot = cid ? '<span class="row-dot" style="background:var('+COLOR_MAP[cid]+')" title="추적 대상 게임사"></span>' : "";
       return '<tr class="'+cls+'"><td class="num">'+rank+'</td><td class="num">'+rc.html+'</td><td>'+dot+title+'</td><td>'+pub+'</td><td>'+cell(genre)+'</td><td class="num">'+cell(year)+'</td><td class="num">'+monthlyCell(monthly)+'</td><td>'+cell(cum)+'</td><td>'+cell(mau)+'</td></tr>';
@@ -1155,9 +1168,10 @@
     }).join("");
   }
 
-  function renderGametrics(){
+  function renderGametrics(rows){
+    rows = rows || GAMETRICS;
     var tbody = document.querySelector("#gtTable tbody");
-    tbody.innerHTML = GAMETRICS.map(function(r){
+    tbody.innerHTML = rows.map(function(r){
       var cid = GAMETRICS_CID[r[1]];
       var cls = cid ? "hl" : "";
       var dot = cid ? '<span class="row-dot" style="background:var('+COLOR_MAP[cid]+')"></span>' : "";
@@ -1165,9 +1179,10 @@
     }).join("");
   }
 
-  function renderSteamKr(){
+  function renderSteamKr(rows){
+    rows = rows || STEAM_KR;
     var tb = document.querySelector("#steamKrTable tbody");
-    tb.innerHTML = STEAM_KR.map(function(r){
+    tb.innerHTML = rows.map(function(r){
       var rank=r[0], title=r[1], pub=r[2], genre=r[3], year=r[4], cid=r[5];
       var cls = cid ? "hl" : "";
       var dot = cid ? '<span class="row-dot" style="background:var('+COLOR_MAP[cid]+')"></span>' : "";
@@ -1175,9 +1190,10 @@
     }).join("");
   }
 
-  function renderSteamGlobal(){
+  function renderSteamGlobal(rows){
+    rows = rows || STEAM_GLOBAL;
     var tb = document.querySelector("#steamGlobalTable tbody");
-    tb.innerHTML = STEAM_GLOBAL.map(function(r){
+    tb.innerHTML = rows.map(function(r){
       return '<tr><td class="num">'+r[0]+'</td><td>'+r[1]+'</td><td class="num">'+r[2].toLocaleString("ko-KR")+'</td><td class="num">'+r[3].toLocaleString("ko-KR")+'</td></tr>';
     }).join("");
   }
@@ -1234,16 +1250,135 @@
   updateScrub(8);
   renderUnlistedGrid();
   renderAggCharts();
-  renderRankTable("asTable", AS_TOP100, "app_store");
-  renderRankTable("gpTable", GP_TOP100, "google_play");
+  renderRankTable("asTable", AS_TOP100, PREV_SNAPSHOT.app_store);
+  renderRankTable("gpTable", GP_TOP100, PREV_SNAPSHOT.google_play);
   renderOnestore();
   renderGametrics();
   renderSteamKr();
   renderSteamGlobal();
 
-  var rankDateSel = document.getElementById("rankDateSelect");
-  rankDateSel.innerHTML = '<option value="0">2026-07-14</option>';
-  document.getElementById("rankDateValue").textContent = "2026-07-14";
+  // ---- App rankings (앱 순위) date archive ----
+  // AS_TOP100/GP_TOP100 above stay as the "latest" snapshot (company cards elsewhere read
+  // them directly via getCurrentRanks) — the picker below only swaps what's shown in the
+  // rankings tables, it never mutates those arrays.
+  var RANK_APP_BASE = new URL("rankings/app/", document.baseURI).href;
+  var rankDates = [];
+  var rankCache = {};
+  var rankCurrentIdx = 0;
+
+  function buildPrevMap(rows){
+    var map = {};
+    (rows||[]).forEach(function(r){
+      if(r[0] === "-" || r[0] == null) return;
+      map[normTitle(r[1])] = r[0];
+    });
+    return map;
+  }
+
+  function loadRankDate(idx){
+    idx = Math.max(0, Math.min(rankDates.length-1, idx));
+    rankCurrentIdx = idx;
+    var date = rankDates[idx];
+    document.getElementById("rankDateSelect").value = String(idx);
+    document.getElementById("rankDateValue").textContent = date;
+    document.getElementById("rankPrev").disabled = (idx >= rankDates.length-1);
+    document.getElementById("rankNext").disabled = (idx <= 0);
+
+    function renderWithPrev(snap, prevAs, prevGp){
+      renderRankTable("asTable", snap.asTop100, prevAs);
+      renderRankTable("gpTable", snap.gpTop100, prevGp);
+      applyRankSearch();
+    }
+    function withSnap(snap){
+      if(idx >= rankDates.length-1){
+        // oldest snapshot we have — compare against the one hardcoded pre-archive baseline
+        renderWithPrev(snap, PREV_SNAPSHOT.app_store, PREV_SNAPSHOT.google_play);
+        return;
+      }
+      var prevDate = rankDates[idx+1];
+      if(rankCache[prevDate]){
+        renderWithPrev(snap, buildPrevMap(rankCache[prevDate].asTop100), buildPrevMap(rankCache[prevDate].gpTop100));
+        return;
+      }
+      fetch(RANK_APP_BASE+prevDate+".json").then(function(res){ return res.json(); }).then(function(prevSnap){
+        rankCache[prevDate] = prevSnap;
+        renderWithPrev(snap, buildPrevMap(prevSnap.asTop100), buildPrevMap(prevSnap.gpTop100));
+      }).catch(function(){ renderWithPrev(snap, {}, {}); });
+    }
+
+    if(rankCache[date]){ withSnap(rankCache[date]); return; }
+    fetch(RANK_APP_BASE+date+".json").then(function(res){
+      if(!res.ok) throw new Error("HTTP "+res.status);
+      return res.json();
+    }).then(function(snap){
+      rankCache[date] = snap;
+      if(rankDates[rankCurrentIdx] === date) withSnap(snap);
+    }).catch(function(){ /* keep whatever's already rendered (e.g. the synchronous default above) */ });
+  }
+
+  function initRankTab(){
+    fetch(RANK_APP_BASE+"index.json").then(function(res){
+      if(!res.ok) throw new Error("HTTP "+res.status);
+      return res.json();
+    }).then(function(manifest){
+      rankDates = manifest.dates || [];
+      if(rankDates.length === 0) return;
+      var sel = document.getElementById("rankDateSelect");
+      sel.innerHTML = rankDates.map(function(d,i){ return '<option value="'+i+'">'+d+'</option>'; }).join("");
+      sel.addEventListener("change", function(){ loadRankDate(parseInt(sel.value,10)); });
+      document.getElementById("rankPrev").addEventListener("click", function(){ loadRankDate(rankCurrentIdx+1); });
+      document.getElementById("rankNext").addEventListener("click", function(){ loadRankDate(rankCurrentIdx-1); });
+      loadRankDate(0);
+    }).catch(function(){ /* archive unavailable (e.g. local file:// testing) — synchronous default above still renders */ });
+  }
+  initRankTab();
+
+  // ---- PC rankings (PC 게임) date archive ----
+  var RANK_PC_BASE = new URL("rankings/pc/", document.baseURI).href;
+  var pcDates = [];
+  var pcCache = {};
+  var pcCurrentIdx = 0;
+
+  function loadPcDate(idx){
+    idx = Math.max(0, Math.min(pcDates.length-1, idx));
+    pcCurrentIdx = idx;
+    var date = pcDates[idx];
+    document.getElementById("pcDateSelect").value = String(idx);
+    document.getElementById("pcPrev").disabled = (idx >= pcDates.length-1);
+    document.getElementById("pcNext").disabled = (idx <= 0);
+
+    function withSnap(snap){
+      document.getElementById("pcDateValue").textContent = snap.label || snap.date;
+      renderGametrics(snap.gametrics);
+      renderSteamKr(snap.steamKr);
+      renderSteamGlobal(snap.steamGlobal);
+    }
+    if(pcCache[date]){ withSnap(pcCache[date]); return; }
+    fetch(RANK_PC_BASE+date+".json").then(function(res){
+      if(!res.ok) throw new Error("HTTP "+res.status);
+      return res.json();
+    }).then(function(snap){
+      pcCache[date] = snap;
+      if(pcDates[pcCurrentIdx] === date) withSnap(snap);
+    }).catch(function(){});
+  }
+
+  function initPcTab(){
+    fetch(RANK_PC_BASE+"index.json").then(function(res){
+      if(!res.ok) throw new Error("HTTP "+res.status);
+      return res.json();
+    }).then(function(manifest){
+      pcDates = manifest.dates || [];
+      if(pcDates.length === 0) return;
+      var sel = document.getElementById("pcDateSelect");
+      sel.innerHTML = pcDates.map(function(d,i){ return '<option value="'+i+'">'+d+'</option>'; }).join("");
+      sel.addEventListener("change", function(){ loadPcDate(parseInt(sel.value,10)); });
+      document.getElementById("pcPrev").addEventListener("click", function(){ loadPcDate(pcCurrentIdx+1); });
+      document.getElementById("pcNext").addEventListener("click", function(){ loadPcDate(pcCurrentIdx-1); });
+      loadPcDate(0);
+    }).catch(function(){});
+  }
+  initPcTab();
 
   var tabBtnCompanies = document.getElementById("tabBtnCompanies");
   var tabBtnRankings = document.getElementById("tabBtnRankings");
