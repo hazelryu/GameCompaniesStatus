@@ -83,10 +83,7 @@
   .news-kicker-tag { font-size: 0.78rem; color: var(--ink-faint); }
   .news-note { flex-basis: 100%; font-size: 0.76rem; color: var(--ink-faint); margin: 0; }
 
-  .monthly-preview { padding-top: 0.4rem; }
-  .monthly-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; }
-  .monthly-view-link:hover { text-decoration: underline; }
-  .monthly-frame { width: 100%; border: 1px solid var(--rule); border-radius: 8px; margin-top: 1.2rem; display: block; }
+  #monthlyContent { padding-top: 0.4rem; }
 
   .news-overview { font-family: Batang, "Nanum Myeongjo", Georgia, serif; font-size: 1.02rem; line-height: 1.75; color: var(--ink); margin: 0 0 1.6rem; }
   .news-section { margin-bottom: 1.6rem; }
@@ -178,12 +175,9 @@
       <p class="news-note">한국 게임 산업 M&amp;A·투자·신작 소식을 매월 1일 정리합니다. 최신 호부터 정렬.</p>
     </div>
 
-    <div class="monthly-preview">
-      <h2 class="issue-title" id="monthlyPreviewTitle"></h2>
-      <p class="issue-desc" id="monthlyPreviewDesc"></p>
-      <a class="monthly-view-link" id="monthlyPreviewLink" href="#" target="_blank" rel="noopener">새 탭에서 보기 &rarr;</a>
-    </div>
-    <iframe id="monthlyFrame" class="monthly-frame" title="월간 리캡 본문"></iframe>
+    <div id="monthlyLoading" class="no-results">불러오는 중…</div>
+    <div id="monthlyError" class="no-results" hidden>이 호를 불러오지 못했습니다.</div>
+    <div id="monthlyContent"></div>
   </section>
 
   <footer>VNG KR BD Intelligence &middot; 데일리 뉴스는 매일 11:30, 월간 리캡은 매월 1일 자동 생성</footer>
@@ -304,43 +298,69 @@
     { ym: "2026-07", title: "자본이 다시 짠 K-게임 지도", desc: "위메이드·카카오게임즈·원스토어 경영권 이전, 솔: 인챈트 매출 1위 질주, 붉은사막 600만 장, 게임스컴 2026 출격 라인업.", latest: true }
   ];
   var monthlyIdx = 0;
+  var monthlyCache = {};
+  var monthlyStyleInjected = false;
 
-  function resizeMonthlyFrame(){
-    var frame = document.getElementById("monthlyFrame");
-    // the 'load' event can fire a frame before web fonts/layout settle inside the iframe,
-    // so scrollHeight reads 0 the first time — measure again after a couple of paints, plus
-    // once more after fonts have had time to load.
-    function measure(){
-      try {
-        var doc = frame.contentDocument;
-        if(doc && doc.documentElement){ frame.style.height = doc.documentElement.scrollHeight + "px"; }
-      } catch(e){ /* cross-origin fallback: leave whatever height was last set */ }
+  // Each recaps/YYYY-MM.html is a full standalone page (own <style>, own .site-nav header,
+  // own masthead/timeline/card markup). Rather than iframing it (which kept collapsing to
+  // 0 height depending on load timing), fetch the HTML as text and splice the pieces we want
+  // straight into this page's DOM: the recap's <style> block (safe to reuse — it shares the
+  // same :root variable names/values as this page) and just the <div class="wire">...</div>
+  // content, skipping that file's own duplicate site-nav header.
+  function renderMonthlyHtml(html){
+    var styleMatch = html.match(/<style>[\s\S]*?<\/style>/);
+    if(styleMatch){
+      var styleEl = document.getElementById("monthlyRecapStyle");
+      if(!styleEl){
+        styleEl = document.createElement("style");
+        styleEl.id = "monthlyRecapStyle";
+        document.head.appendChild(styleEl);
+      }
+      styleEl.textContent = styleMatch[0].replace(/^<style>/, "").replace(/<\/style>$/, "");
     }
-    requestAnimationFrame(function(){ requestAnimationFrame(measure); });
-    setTimeout(measure, 400);
+    var wireStart = html.indexOf('<div class="wire">');
+    var scriptStart = html.indexOf("<script>", wireStart);
+    var wireHtml = wireStart >= 0 ? html.slice(wireStart, scriptStart >= 0 ? scriptStart : undefined) : "<p>콘텐츠를 표시할 수 없습니다.</p>";
+    document.getElementById("monthlyContent").innerHTML = wireHtml;
   }
 
-  function renderMonthlyIssue(idx){
+  function loadMonthlyIssue(idx){
     idx = Math.max(0, Math.min(MONTHLY_ISSUES.length - 1, idx));
     monthlyIdx = idx;
     var issue = MONTHLY_ISSUES[idx];
     document.getElementById("monthlySelect").value = String(idx);
     document.getElementById("monthlyPrev").disabled = (idx >= MONTHLY_ISSUES.length - 1);
     document.getElementById("monthlyNext").disabled = (idx <= 0);
-    document.getElementById("monthlyPreviewTitle").innerHTML = escNewsHtml(issue.title) + (issue.latest ? ' <span class="issue-latest">Latest</span>' : "");
-    document.getElementById("monthlyPreviewDesc").textContent = issue.desc;
-    document.getElementById("monthlyPreviewLink").href = "recaps/" + issue.ym + ".html";
-    document.getElementById("monthlyFrame").src = "recaps/" + issue.ym + ".html?embed=1";
+
+    if(monthlyCache[issue.ym]){
+      document.getElementById("monthlyLoading").hidden = true;
+      document.getElementById("monthlyError").hidden = true;
+      renderMonthlyHtml(monthlyCache[issue.ym]);
+      return;
+    }
+    document.getElementById("monthlyContent").innerHTML = "";
+    document.getElementById("monthlyError").hidden = true;
+    document.getElementById("monthlyLoading").hidden = false;
+    fetch("recaps/" + issue.ym + ".html").then(function(res){
+      if(!res.ok) throw new Error("HTTP " + res.status);
+      return res.text();
+    }).then(function(html){
+      monthlyCache[issue.ym] = html;
+      document.getElementById("monthlyLoading").hidden = true;
+      if(MONTHLY_ISSUES[monthlyIdx].ym === issue.ym) renderMonthlyHtml(html);
+    }).catch(function(){
+      document.getElementById("monthlyLoading").hidden = true;
+      document.getElementById("monthlyError").hidden = false;
+    });
   }
 
   function initMonthlyTab(){
     var sel = document.getElementById("monthlySelect");
     sel.innerHTML = MONTHLY_ISSUES.map(function(m, i){ return '<option value="' + i + '">' + m.ym + "</option>"; }).join("");
-    sel.addEventListener("change", function(){ renderMonthlyIssue(parseInt(sel.value, 10)); });
-    document.getElementById("monthlyPrev").addEventListener("click", function(){ renderMonthlyIssue(monthlyIdx + 1); });
-    document.getElementById("monthlyNext").addEventListener("click", function(){ renderMonthlyIssue(monthlyIdx - 1); });
-    document.getElementById("monthlyFrame").addEventListener("load", resizeMonthlyFrame);
-    renderMonthlyIssue(0);
+    sel.addEventListener("change", function(){ loadMonthlyIssue(parseInt(sel.value, 10)); });
+    document.getElementById("monthlyPrev").addEventListener("click", function(){ loadMonthlyIssue(monthlyIdx + 1); });
+    document.getElementById("monthlyNext").addEventListener("click", function(){ loadMonthlyIssue(monthlyIdx - 1); });
+    loadMonthlyIssue(0);
   }
 
   initMonthlyTab();
