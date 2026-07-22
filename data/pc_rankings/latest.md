@@ -1,28 +1,29 @@
 # PC게임 순위 (게임트릭스 PC방 점유율 + 스팀)
 
-> Last updated: 2026-07-14
+> Last updated: 2026-07-22 (Steam 코리아 Top Sellers는 이번 갱신에서 소스 접근 불가로 2026-07-14 값을 유지 — 재확인 못함)
 
-## 게임트릭스(Gametrics) PC방 사용량 순위 — 2026-07-13(월), 전국/전체
+## 게임트릭스(Gametrics) PC방 사용량 순위 — 2026-07-21(화) 기준일, 전국/전체
 
 무료 공개 페이지는 Top 10까지만 노출 (11~20위는 유료 회원 전용). 8개사(Krafton/Nexon/NCSOFT/KakaoGames/Devsisters/Smilegate/Haegin/Com2uS/Netmarble/NHN/Neowiz/PearlAbyss/Wemade/Shiftup/Webzen) 타이틀은 하이라이트.
 
+**주요 변화**: 발로란트가 5위→2위로 급상승(6.35%→11.15%), 로블록스가 신규로 9위 진입, 스타크래프트는 Top10에서 이탈.
+
 | 순위 | 게임 | 장르 | 점유율 | 퍼블리셔 | 추적사 |
 |---|---|---|---|---|---|
-| 1 | 리그 오브 레전드 | MOBA | 34.01% | Riot Games (Tencent) | — |
-| 2 | 배틀그라운드 | 배틀로얄/FPS | 8.24% | **Krafton** | ✅ |
-| 3 | 리니지 클래식 | RPG | 7.44% | **NCSOFT** | ✅ |
-| 4 | FC온라인 | 스포츠 | 6.99% | **Nexon** | ✅ |
-| 5 | 발로란트 | FPS | 6.35% | Riot Games | — |
-| 6 | 메이플스토리 | RPG | 5.37% | **Nexon** | ✅ |
-| 7 | 오버워치 | FPS | 5.23% | Blizzard | — |
-| 8 | 서든어택 | FPS | 4.96% | **Nexon** | ✅ |
-| 9 | 로스트아크 | RPG | 2.42% | **Smilegate RPG** | ✅ |
-| 10 | 스타크래프트 | RTS | 1.73% | Blizzard | — |
-| ~19(주간참고) | 리니지 | RPG | 0.61%(주간) | **NCSOFT** | ✅ |
+| 1 | 리그 오브 레전드 | MOBA | 32.27% | Riot Games (Tencent) | — |
+| 2 | 발로란트 | FPS | 11.15% | Riot Games | — |
+| 3 | 배틀그라운드 | 배틀로얄/FPS | 8.14% | **Krafton** | ✅ |
+| 4 | FC온라인 | 스포츠 | 7.84% | **Nexon** | ✅ |
+| 5 | 리니지 클래식 | RPG | 5.70% | **NCSOFT** | ✅ |
+| 6 | 메이플스토리 | RPG | 5.29% | **Nexon** | ✅ |
+| 7 | 오버워치 | FPS | 5.07% | Blizzard | — |
+| 8 | 서든어택 | FPS | 4.36% | **Nexon** | ✅ |
+| 9 | Roblox | RPG | 3.02% | Roblox Corporation | — |
+| 10 | 로스트아크 | RPG | 1.87% | **Smilegate RPG** | ✅ |
 
-출처: https://www.gametrics.com/rank/Rank02.aspx , 주간동향 https://www.gametrics.com/news/News02_View.aspx?seqid=67899
+출처: https://www.gametrics.com/rank/Rank02.aspx
 
-## 스팀 코리아 매출 순위 (Top Sellers, 지역 감지: 대한민국) — 2026-07-14
+## 스팀 코리아 매출 순위 (Top Sellers, 지역 감지: 대한민국) — 2026-07-14 (재확인 못함, 이전 값 유지)
 
 | 순위 | 타이틀 | 개발/퍼블리셔 | 장르 | 출시연도 |
 |---|---|---|---|---|
@@ -42,16 +43,17 @@
 
 출처: https://store.steampowered.com/charts/topselling (지역 자동감지 KR)
 
-## 스팀 글로벌 동시접속 순위 (Most Played, 지역 무관) — 2026-07-14
+## 스팀 글로벌 동시접속 순위 (Most Played, 지역 무관) — 2026-07-22
 
-| 순위 | 타이틀 | 현재접속 | 금일 최고 |
+| 순위 | 타이틀 | 현재접속 | 30일 최고 |
 |---|---|---|---|
-| 1 | Counter-Strike 2 | 583,181 | 1,266,345 |
-| 2 | Palworld | 537,057 | 825,513 |
-| 5 | PUBG: BATTLEGROUNDS (**Krafton**) | 157,697 | 721,160 |
-| 15 | Apex Legends | 69,628 | 188,141 |
+| 1 | Counter-Strike 2 | 552,801 | 1,573,727 |
+| 2 | Palworld | 549,761 | 956,613 |
+| 3 | Dota 2 | 376,517 | 862,639 |
+| 4 | TBH: Task Bar Hero | 189,125 | 527,714 |
+| 5 | PUBG: BATTLEGROUNDS (**Krafton**) | 184,040 | 804,204 |
 
-출처: https://store.steampowered.com/charts/mostplayed (전세계 기준, 한국 단독 동접 차트는 공개 소스 없음)
+출처: https://steamcharts.com/ (전세계 기준, 한국 단독 동접 차트는 공개 소스 없음; 이번 갱신부터 steamcharts.com 인용 — store.steampowered.com/charts/mostplayed는 JS 렌더링이라 자동 수집 불가)
 
 ## 한계
 - 게임트릭스 무료 데이터는 Top10까지만 공개 (11~20위 유료)
