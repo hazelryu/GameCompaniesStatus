@@ -59,22 +59,12 @@
   .tab-btn.is-active { background: var(--accent); color: var(--paper-raised); }
   .panel[hidden] { display: none; }
 
-  .list { border-top: 1px solid var(--rule); }
-  .issue {
-    display: grid; grid-template-columns: 130px 1fr; gap: 1.2rem;
-    padding: 1.3rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit;
-  }
-  .issue:hover .issue-title { color: var(--accent); }
-  .issue-date { font-family: Consolas, monospace; font-size: 0.82rem; color: var(--ink-faint); padding-top: 0.2rem; }
-  .issue-title { font-family: Batang, "Nanum Myeongjo", Georgia, serif; font-size: 1.2rem; margin: 0 0 0.3rem; }
+  .issue-title { font-family: Batang, "Nanum Myeongjo", Georgia, serif; font-size: 1.2rem; margin: 0.8rem 0 0.3rem; }
   .issue-desc { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.55; margin: 0; }
   .issue-latest {
     display: inline-block; font-family: Consolas, monospace; font-size: 0.62rem;
     letter-spacing: 0.05em; text-transform: uppercase; padding: 0.1rem 0.4rem;
     background: var(--accent); color: var(--paper-raised); border-radius: 2px; margin-left: 0.5rem;
-  }
-  @media (max-width: 520px) {
-    .issue { grid-template-columns: 1fr; gap: 0.2rem; }
   }
 
   .news-controls {
@@ -89,9 +79,13 @@
   }
   .news-step:hover:not(:disabled) { background: var(--accent-soft); }
   .news-step:disabled { opacity: 0.4; cursor: default; }
-  #newsDateSelect { font-size: 0.85rem; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 6px; padding: 0.4rem 0.6rem; font-family: Consolas, monospace; }
+  .period-select { font-size: 0.85rem; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 6px; padding: 0.4rem 0.6rem; font-family: Consolas, monospace; }
   .news-kicker-tag { font-size: 0.78rem; color: var(--ink-faint); }
   .news-note { flex-basis: 100%; font-size: 0.76rem; color: var(--ink-faint); margin: 0; }
+
+  .monthly-preview { padding-top: 0.4rem; }
+  .monthly-view-link { display: inline-block; margin-top: 0.6rem; font-size: 0.85rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+  .monthly-view-link:hover { text-decoration: underline; }
 
   .news-overview { font-family: Batang, "Nanum Myeongjo", Georgia, serif; font-size: 1.02rem; line-height: 1.75; color: var(--ink); margin: 0 0 1.6rem; }
   .news-section { margin-bottom: 1.6rem; }
@@ -149,7 +143,7 @@
       <span class="eyebrow">데일리 게임 산업 브리핑</span>
       <div class="news-nav">
         <button class="news-step" id="newsPrev" aria-label="이전 날짜">&#8249;</button>
-        <select id="newsDateSelect" aria-label="날짜 선택"></select>
+        <select id="newsDateSelect" class="period-select" aria-label="날짜 선택"></select>
         <button class="news-step" id="newsNext" aria-label="다음 날짜">&#8250;</button>
       </div>
       <span class="news-kicker-tag" id="newsKickerTag"></span>
@@ -173,15 +167,20 @@
   </section>
 
   <section id="panelMonthly" class="panel" hidden role="tabpanel" aria-labelledby="tabBtnMonthly">
-    <p class="sub" style="margin-top:-0.6rem;">한국 게임 산업 M&amp;A·투자·신작 소식을 매월 1일 정리합니다. 최신 호부터 정렬.</p>
-    <div class="list">
-      <a class="issue" href="recaps/2026-07.html">
-        <div class="issue-date">2026.07</div>
-        <div>
-          <h2 class="issue-title">자본이 다시 짠 K-게임 지도<span class="issue-latest">Latest</span></h2>
-          <p class="issue-desc">위메이드·카카오게임즈·원스토어 경영권 이전, 솔: 인챈트 매출 1위 질주, 붉은사막 600만 장, 게임스컴 2026 출격 라인업.</p>
-        </div>
-      </a>
+    <div class="news-controls">
+      <span class="eyebrow">월간 게임 산업 리캡</span>
+      <div class="news-nav">
+        <button class="news-step" id="monthlyPrev" aria-label="이전 달">&#8249;</button>
+        <select id="monthlySelect" class="period-select" aria-label="월 선택"></select>
+        <button class="news-step" id="monthlyNext" aria-label="다음 달">&#8250;</button>
+      </div>
+      <p class="news-note">한국 게임 산업 M&amp;A·투자·신작 소식을 매월 1일 정리합니다. 최신 호부터 정렬.</p>
+    </div>
+
+    <div class="monthly-preview">
+      <h2 class="issue-title" id="monthlyPreviewTitle"></h2>
+      <p class="issue-desc" id="monthlyPreviewDesc"></p>
+      <a class="monthly-view-link" id="monthlyPreviewLink" href="#">전체 리캡 보기 &rarr;</a>
     </div>
   </section>
 
@@ -295,5 +294,36 @@
   }
 
   initNewsTab();
+
+  // 월간 리캡 — recaps/YYYY-MM.html is a separate full page per issue (own masthead/timeline/
+  // cards), so unlike the daily tab there's nothing to fetch and render inline. This array is
+  // just an index (newest first); selecting an entry updates the preview card and its link.
+  var MONTHLY_ISSUES = [
+    { ym: "2026-07", title: "자본이 다시 짠 K-게임 지도", desc: "위메이드·카카오게임즈·원스토어 경영권 이전, 솔: 인챈트 매출 1위 질주, 붉은사막 600만 장, 게임스컴 2026 출격 라인업.", latest: true }
+  ];
+  var monthlyIdx = 0;
+
+  function renderMonthlyIssue(idx){
+    idx = Math.max(0, Math.min(MONTHLY_ISSUES.length - 1, idx));
+    monthlyIdx = idx;
+    var issue = MONTHLY_ISSUES[idx];
+    document.getElementById("monthlySelect").value = String(idx);
+    document.getElementById("monthlyPrev").disabled = (idx >= MONTHLY_ISSUES.length - 1);
+    document.getElementById("monthlyNext").disabled = (idx <= 0);
+    document.getElementById("monthlyPreviewTitle").innerHTML = escNewsHtml(issue.title) + (issue.latest ? ' <span class="issue-latest">Latest</span>' : "");
+    document.getElementById("monthlyPreviewDesc").textContent = issue.desc;
+    document.getElementById("monthlyPreviewLink").href = "recaps/" + issue.ym + ".html";
+  }
+
+  function initMonthlyTab(){
+    var sel = document.getElementById("monthlySelect");
+    sel.innerHTML = MONTHLY_ISSUES.map(function(m, i){ return '<option value="' + i + '">' + m.ym + "</option>"; }).join("");
+    sel.addEventListener("change", function(){ renderMonthlyIssue(parseInt(sel.value, 10)); });
+    document.getElementById("monthlyPrev").addEventListener("click", function(){ renderMonthlyIssue(monthlyIdx + 1); });
+    document.getElementById("monthlyNext").addEventListener("click", function(){ renderMonthlyIssue(monthlyIdx - 1); });
+    renderMonthlyIssue(0);
+  }
+
+  initMonthlyTab();
 })();
 </script>
