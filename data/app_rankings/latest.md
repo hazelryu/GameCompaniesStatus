@@ -1,9 +1,9 @@
 # 한국 모바일게임 매출 순위
 
-> **2026-07-22 갱신부터 출처가 바뀌었습니다**: MobileIndex 실시간 차트에 이번 갱신에서 접근할 수 없어, App Store·Google Play 모두 AppBrain(3rd-party, 매일 갱신) 기준으로 전환했습니다. AppBrain 무료 등급은 Google Play는 Top100 전체를 제공하지만 App Store는 Top60까지만 제공합니다 — **App Store 61~100위는 2026-07-14 MobileIndex 스냅샷을 그대로 유지**하고 있으며 이번 갱신에서 재확인하지 못했습니다.
-> 표 본문(전체 100행)은 [dashboard/rankings/app/2026-07-22.json](../../dashboard/rankings/app/2026-07-22.json)과 라이브 대시보드(앱 순위 탭)에서 확인하세요 — 이 파일은 방법론 요약만 유지하고 매주 전체 재작성은 하지 않습니다.
+> **2026-07-23 갱신**: MobileIndex 실시간 차트 접근이 복구되어 **App Store는 Top100 전체를 MobileIndex "더보기" 확장 데이터로 재확인**했습니다(2026-07-14 스냅샷 유지분 해소). Google Play는 MobileIndex 무료 등급이 이번 갱신에서 45위까지만 제공해 **46~100위는 AppBrain(3rd-party, 2026-07-22 기준 스냅샷)으로 보완**했습니다 — MobileIndex와 AppBrain은 산정 방식이 달라 순위·타이틀이 완전히 일치하지 않을 수 있습니다.
+> 표 본문(전체 100행)은 [dashboard/rankings/app/2026-07-23.json](../../dashboard/rankings/app/2026-07-23.json)과 라이브 대시보드(앱 순위 탭)에서 확인하세요 — 이 파일은 방법론 요약만 유지하고 매번 전체 재작성은 하지 않습니다.
 > 장르·출시연도·누적매출·MAU는 AppBrain에 없는 정보라 신규 진입작은 "—"로 표기하며, 기존에 MobileIndex로 수집해둔 타이틀은 이전 값을 유지합니다. 존재하지 않는 값은 만들어내지 않았습니다.
-> 이 파일은 주간 예약 작업으로 갱신되며, 누적 이력은 [history.csv](history.csv) 참고. 원스토어는 [onestore.md](onestore.md) 별도 참고.
+> 이 파일은 예약 작업으로 갱신되며, 누적 이력은 [history.csv](history.csv) 참고. 원스토어는 [onestore.md](onestore.md) 별도 참고.
 > **순위변동 안내:** 대시보드는 이제 매 갱신마다 쌓이는 날짜별 스냅샷끼리 직접 비교해 순위변동(▲▼)을 계산합니다(가장 오래된 스냅샷만 예외적으로 2026-07-13 Top20 기준과 비교). 2026년 출시 신작이거나 직전 스냅샷에 없었다가 새로 진입한 타이틀은 대시보드에서 노란색으로 하이라이트됩니다(회사 소속과 무관).
 
 ## App Store 코리아 Top 100 (매출)
