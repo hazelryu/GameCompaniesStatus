@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_3월_2주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : "▲3",
+         "revenueChangePct" : 75.98,
+         "revenueUsd" : 6414409
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 2,
+         "rankChange" : "-",
+         "revenueChangePct" : -17.25,
+         "revenueUsd" : 3580903
+      },
+      {
+         "company" : "Wemade",
+         "game" : "레전드 오브 이미르",
+         "rank" : 3,
+         "rankChange" : "▼2",
+         "revenueChangePct" : -45.75,
+         "revenueUsd" : 3517467
+      },
+      {
+         "company" : "FUNFLY",
+         "game" : "라스트워: 서바이벌",
+         "rank" : 4,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -46.97,
+         "revenueUsd" : 1972038
+      },
+      {
+         "company" : "Leniu Technology",
+         "game" : "I9: 인페르노 나인",
+         "rank" : 5,
+         "rankChange" : "-",
+         "revenueChangePct" : -25.59,
+         "revenueUsd" : 1825310
+      },
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 6,
+         "rankChange" : "-",
+         "revenueChangePct" : -25.18,
+         "revenueUsd" : 1404219
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 7,
+         "rankChange" : "-",
+         "revenueChangePct" : -26.79,
+         "revenueUsd" : 1267873
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 8,
+         "rankChange" : "-",
+         "revenueChangePct" : -16.38,
+         "revenueUsd" : 1130745
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 9,
+         "rankChange" : "-",
+         "revenueChangePct" : -19.99,
+         "revenueUsd" : 1023017
+      },
+      {
+         "company" : "Level Infinite",
+         "game" : "승리의 여신: 니케",
+         "rank" : 10,
+         "rankChange" : "-",
+         "revenueChangePct" : -25.41,
+         "revenueUsd" : 900347
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-03-08",
+      "month" : 3,
+      "startDate" : "2025-03-02",
+      "week" : 1,
+      "year" : 2025
+   }
+}

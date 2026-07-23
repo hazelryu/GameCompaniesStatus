@@ -1,0 +1,91 @@
+{
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : "-",
+         "revenueChangePct" : 29.57,
+         "revenueUsd" : 9662349
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 2,
+         "rankChange" : "-",
+         "revenueChangePct" : -12.13,
+         "revenueUsd" : 5054583
+      },
+      {
+         "company" : "Joy Net Games",
+         "game" : "버섯커 키우기",
+         "rank" : 3,
+         "rankChange" : "▲2",
+         "revenueChangePct" : 53.69,
+         "revenueUsd" : 3874081
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 4,
+         "rankChange" : "-",
+         "revenueChangePct" : -8.68,
+         "revenueUsd" : 2688127
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 5,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 3.66,
+         "revenueUsd" : 2231787
+      },
+      {
+         "company" : "Supercell",
+         "game" : "브롤 스타즈",
+         "rank" : 6,
+         "rankChange" : "▲4",
+         "revenueChangePct" : 76.25,
+         "revenueUsd" : 2146588
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 7,
+         "rankChange" : "-",
+         "revenueChangePct" : 27.35,
+         "revenueUsd" : 1948807
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 8,
+         "rankChange" : "▲3",
+         "revenueChangePct" : 48.71,
+         "revenueUsd" : 1721601
+      },
+      {
+         "company" : "HYBE",
+         "game" : "별이되어라2: 베다의 기사들",
+         "rank" : 9,
+         "rankChange" : "▲56",
+         "revenueChangePct" : 738.86,
+         "revenueUsd" : 1454919
+      },
+      {
+         "company" : "Kakao",
+         "game" : "롬: 리멤버 오브 마제스티",
+         "rank" : 10,
+         "rankChange" : "▼2",
+         "revenueChangePct" : -11.78,
+         "revenueUsd" : 1311910
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-04-13",
+      "month" : 4,
+      "startDate" : "2024-04-07",
+      "week" : "2주차",
+      "year" : 2024
+   }
+}

@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_7월_3주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : 1,
+         "revenueChangePct" : 29.61,
+         "revenueUsd" : 6591796
+      },
+      {
+         "company" : "Kakao Games Corp.",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 2,
+         "rankChange" : -1,
+         "revenueChangePct" : -41.57,
+         "revenueUsd" : 3103444
+      },
+      {
+         "company" : "NEXON Company",
+         "game" : "마비노기 모바일",
+         "rank" : 3,
+         "rankChange" : 3,
+         "revenueChangePct" : 68.98,
+         "revenueUsd" : 2107788
+      },
+      {
+         "company" : "Century Games PTE. LTD.",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 4,
+         "rankChange" : -1,
+         "revenueChangePct" : -9.93,
+         "revenueUsd" : 1963373
+      },
+      {
+         "company" : "FUNFLY PTE. LTD.",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 5,
+         "rankChange" : 2,
+         "revenueChangePct" : 34.86,
+         "revenueUsd" : 1629598
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "RF 온라인 넥스트",
+         "rank" : 6,
+         "rankChange" : -1,
+         "revenueChangePct" : -16.06,
+         "revenueUsd" : 1245328
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "세븐나이츠 리버스",
+         "rank" : 7,
+         "rankChange" : -3,
+         "revenueChangePct" : -50.23,
+         "revenueUsd" : 1058918
+      },
+      {
+         "company" : "COGNOSPHERE PTE. LTD.",
+         "game" : "붕괴: 스타레일",
+         "rank" : 8,
+         "rankChange" : 21,
+         "revenueChangePct" : 296.68,
+         "revenueUsd" : 1038307
+      },
+      {
+         "company" : "Joy Nice Games",
+         "game" : "갓깨비 키우기",
+         "rank" : 9,
+         "rankChange" : 1,
+         "revenueChangePct" : 15.99,
+         "revenueUsd" : 846662
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 10,
+         "rankChange" : -2,
+         "revenueChangePct" : -16.03,
+         "revenueUsd" : 763041
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-07-12",
+      "month" : 7,
+      "startDate" : "2025-07-06",
+      "week" : 2,
+      "year" : 2025
+   }
+}

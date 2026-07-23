@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_11월_2주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : null,
+         "revenueChangePct" : 119.96,
+         "revenueUsd" : 7155077
+      },
+      {
+         "company" : "FUNFLY",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 2,
+         "rankChange" : null,
+         "revenueChangePct" : -38.13,
+         "revenueUsd" : 4298406
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 3,
+         "rankChange" : null,
+         "revenueChangePct" : -22.23,
+         "revenueUsd" : 3190446
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "뱀피르",
+         "rank" : 4,
+         "rankChange" : null,
+         "revenueChangePct" : -7.13,
+         "revenueUsd" : 2352905
+      },
+      {
+         "company" : "DRIMAGE",
+         "game" : "아키텍트: 랜드 오브 엑자일",
+         "rank" : 5,
+         "rankChange" : null,
+         "revenueChangePct" : -40.73,
+         "revenueUsd" : 1858357
+      },
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 6,
+         "rankChange" : null,
+         "revenueChangePct" : 105.27,
+         "revenueUsd" : 1858357
+      },
+      {
+         "company" : "Florere Game",
+         "game" : "라스트 Z: 서바이벌 슈터",
+         "rank" : 7,
+         "rankChange" : null,
+         "revenueChangePct" : -17.34,
+         "revenueUsd" : 1495410
+      },
+      {
+         "company" : "Century Games",
+         "game" : "킹샷",
+         "rank" : 8,
+         "rankChange" : null,
+         "revenueChangePct" : 2.34,
+         "revenueUsd" : 1339837
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 9,
+         "rankChange" : null,
+         "revenueChangePct" : -18.76,
+         "revenueUsd" : 1131315
+      },
+      {
+         "company" : "NEXON Company",
+         "game" : "마비노기 모바일",
+         "rank" : 10,
+         "rankChange" : null,
+         "revenueChangePct" : -2.59,
+         "revenueUsd" : 999150
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-11-09",
+      "month" : 11,
+      "startDate" : "2025-11-03",
+      "week" : 1,
+      "year" : 2025
+   }
+}

@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_2월_1주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 1,
+         "rankChange" : 2,
+         "revenueChangePct" : 195.51,
+         "revenueUsd" : 6181677
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트워: 서바이벌",
+         "rank" : 2,
+         "rankChange" : -1,
+         "revenueChangePct" : -34.21,
+         "revenueUsd" : 3793383
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 3,
+         "rankChange" : -1,
+         "revenueChangePct" : -8.92,
+         "revenueUsd" : 3498893
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 4,
+         "rankChange" : 0,
+         "revenueChangePct" : 33.2,
+         "revenueUsd" : 2387627
+      },
+      {
+         "company" : "Wemade Connect",
+         "game" : "로스트 소드",
+         "rank" : 5,
+         "rankChange" : 3,
+         "revenueChangePct" : 82.45,
+         "revenueUsd" : 1878007
+      },
+      {
+         "company" : "Roblox",
+         "game" : "Roblox",
+         "rank" : 6,
+         "rankChange" : 4,
+         "revenueChangePct" : 81.23,
+         "revenueUsd" : 1528436
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 7,
+         "rankChange" : -1,
+         "revenueChangePct" : -12.15,
+         "revenueUsd" : 1344118
+      },
+      {
+         "company" : "miHoYo",
+         "game" : "젠레스 존 제로",
+         "rank" : 8,
+         "rankChange" : 16,
+         "revenueChangePct" : 238.56,
+         "revenueUsd" : 1217917
+      },
+      {
+         "company" : "Leniu",
+         "game" : "I9: 인페르노 나인",
+         "rank" : 9,
+         "rankChange" : 18,
+         "revenueChangePct" : 283.03,
+         "revenueUsd" : 1215513
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 10,
+         "rankChange" : 2,
+         "revenueChangePct" : 35.83,
+         "revenueUsd" : 970305
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-02-01",
+      "month" : 1,
+      "startDate" : "2025-01-26",
+      "week" : 4,
+      "year" : 2025
+   }
+}

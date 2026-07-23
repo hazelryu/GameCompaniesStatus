@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "24년_12월_5주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 1,
+         "rankChange" : "▲2",
+         "revenueChangePct" : 83.87,
+         "revenueUsd" : 6758511
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 2,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -45.42,
+         "revenueUsd" : 6269309
+      },
+      {
+         "company" : "First Fun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : "▼1",
+         "revenueChangePct" : 23.52,
+         "revenueUsd" : 6186712
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 4,
+         "rankChange" : "-",
+         "revenueChangePct" : -16.22,
+         "revenueUsd" : 2471575
+      },
+      {
+         "company" : "COGNOSPHERE",
+         "game" : "젠레스존제로",
+         "rank" : 5,
+         "rankChange" : "▲14",
+         "revenueChangePct" : 282.8,
+         "revenueUsd" : 2461510
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 6,
+         "rankChange" : "▲3",
+         "revenueChangePct" : 33.72,
+         "revenueUsd" : 1932813
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "Royal Match",
+         "rank" : 7,
+         "rankChange" : "▲1",
+         "revenueChangePct" : -4.66,
+         "revenueUsd" : 1620701
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 8,
+         "rankChange" : "▼3",
+         "revenueChangePct" : -26.16,
+         "revenueUsd" : 1587417
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지 W",
+         "rank" : 9,
+         "rankChange" : "▲1",
+         "revenueChangePct" : -2.15,
+         "revenueUsd" : 1318649
+      },
+      {
+         "company" : "HaoPlay",
+         "game" : "소녀전선2: 망명",
+         "rank" : 10,
+         "rankChange" : "▼4",
+         "revenueChangePct" : -42.04,
+         "revenueUsd" : 1189564
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-12-28",
+      "month" : 12,
+      "startDate" : "2024-12-22",
+      "week" : 4,
+      "year" : 2024
+   }
+}

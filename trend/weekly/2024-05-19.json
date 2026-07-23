@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "24년_5월_4주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 1,
+         "rankChange" : 1,
+         "revenueChangePct" : -4.39,
+         "revenueUsd" : 5417113
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "나 혼자만 레벨업: 어라이즈",
+         "rank" : 2,
+         "rankChange" : -1,
+         "revenueChangePct" : -38.82,
+         "revenueUsd" : 4417149
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 3,
+         "rankChange" : 0,
+         "revenueChangePct" : -12.62,
+         "revenueUsd" : 3743053
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 4,
+         "rankChange" : 0,
+         "revenueChangePct" : -1.65,
+         "revenueUsd" : 2298258
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 5,
+         "rankChange" : 1,
+         "revenueChangePct" : -8.82,
+         "revenueUsd" : 1870394
+      },
+      {
+         "company" : "Joy Net Games",
+         "game" : "버섯커 키우기",
+         "rank" : 6,
+         "rankChange" : 2,
+         "revenueChangePct" : 1.29,
+         "revenueUsd" : 1722293
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 7,
+         "rankChange" : 0,
+         "revenueChangePct" : -27.47,
+         "revenueUsd" : 1365051
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 8,
+         "rankChange" : 4,
+         "revenueChangePct" : -4.55,
+         "revenueUsd" : 1265215
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "페이트/그랜드 오더",
+         "rank" : 9,
+         "rankChange" : 16,
+         "revenueChangePct" : 108.58,
+         "revenueUsd" : 1147038
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 10,
+         "rankChange" : 4,
+         "revenueChangePct" : -7.04,
+         "revenueUsd" : 1141331
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-05-25",
+      "month" : 5,
+      "startDate" : "2024-05-19",
+      "week" : 3,
+      "year" : 2024
+   }
+}

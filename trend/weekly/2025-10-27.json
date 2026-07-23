@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_11월_1주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "FUNFLY",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 1,
+         "rankChange" : null,
+         "revenueChangePct" : 38.58,
+         "revenueUsd" : 6574571
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 2,
+         "rankChange" : null,
+         "revenueChangePct" : 23.42,
+         "revenueUsd" : 3800601
+      },
+      {
+         "company" : "DRIMAGE",
+         "game" : "아키텍트: 랜드 오브 엑자일",
+         "rank" : 3,
+         "rankChange" : null,
+         "revenueChangePct" : 150.52,
+         "revenueUsd" : 3248909
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 4,
+         "rankChange" : null,
+         "revenueChangePct" : 1.68,
+         "revenueUsd" : 2679991
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "뱀피르",
+         "rank" : 5,
+         "rankChange" : null,
+         "revenueChangePct" : -70.97,
+         "revenueUsd" : 2006306
+      },
+      {
+         "company" : "Florere Game",
+         "game" : "라스트 Z: 서바이벌 슈터",
+         "rank" : 6,
+         "rankChange" : null,
+         "revenueChangePct" : 12.73,
+         "revenueUsd" : 1930907
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 7,
+         "rankChange" : null,
+         "revenueChangePct" : -19.54,
+         "revenueUsd" : 1404858
+      },
+      {
+         "company" : "Century Games",
+         "game" : "킹샷",
+         "rank" : 8,
+         "rankChange" : null,
+         "revenueChangePct" : 4.13,
+         "revenueUsd" : 1202706
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 9,
+         "rankChange" : null,
+         "revenueChangePct" : 3.47,
+         "revenueUsd" : 1017432
+      },
+      {
+         "company" : "NEXON",
+         "game" : "마비노기 모바일",
+         "rank" : 10,
+         "rankChange" : null,
+         "revenueChangePct" : -30.81,
+         "revenueUsd" : 966963
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-11-02",
+      "month" : 10,
+      "startDate" : "2025-10-27",
+      "week" : 5,
+      "year" : 2025
+   }
+}

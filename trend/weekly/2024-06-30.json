@@ -1,0 +1,91 @@
+{
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : "-",
+         "revenueChangePct" : 109.61,
+         "revenueUsd" : 8593681
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 2,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 150.49,
+         "revenueUsd" : 4170401
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -1.33,
+         "revenueUsd" : 2949290
+      },
+      {
+         "company" : "Kuro Game",
+         "game" : "명조: 워더링 웨이브",
+         "rank" : 4,
+         "rankChange" : "▲5",
+         "revenueChangePct" : 168.77,
+         "revenueUsd" : 1904635
+      },
+      {
+         "company" : "Devsisters",
+         "game" : "쿠키런: 모험의 탑",
+         "rank" : 5,
+         "rankChange" : "▲60",
+         "revenueChangePct" : 1331.58,
+         "revenueUsd" : 1566007
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 6,
+         "rankChange" : "▲2",
+         "revenueChangePct" : 94.76,
+         "revenueUsd" : 1467330
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 7,
+         "rankChange" : "▼3",
+         "revenueChangePct" : 19.61,
+         "revenueUsd" : 1349226
+      },
+      {
+         "company" : "Joy Net Games",
+         "game" : "버섯커 키우기",
+         "rank" : 8,
+         "rankChange" : "▲6",
+         "revenueChangePct" : 142.68,
+         "revenueUsd" : 1272324
+      },
+      {
+         "company" : "1.11",
+         "game" : "운빨존많겜",
+         "rank" : 9,
+         "rankChange" : "▲3",
+         "revenueChangePct" : 95.48,
+         "revenueUsd" : 1229487
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 10,
+         "rankChange" : "▼3",
+         "revenueChangePct" : 45.78,
+         "revenueUsd" : 1102194
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-07-06",
+      "month" : 7,
+      "startDate" : "2024-06-30",
+      "week" : 1,
+      "year" : 2024
+   }
+}

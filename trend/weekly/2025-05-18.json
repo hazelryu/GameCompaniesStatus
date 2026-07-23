@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_5월_5주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "Netmarble",
+         "game" : "세븐나이츠 리버스",
+         "rank" : 1,
+         "rankChange" : "▲34",
+         "revenueChangePct" : 3624.9,
+         "revenueUsd" : 6620869
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 2,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -28.74,
+         "revenueUsd" : 3670342
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 3,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 44.7,
+         "revenueUsd" : 2642144
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "RF 온라인 넥스트",
+         "rank" : 4,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 40.93,
+         "revenueUsd" : 1891289
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 5,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 32.88,
+         "revenueUsd" : 1495235
+      },
+      {
+         "company" : "NEXON",
+         "game" : "마비노기 모바일",
+         "rank" : 6,
+         "rankChange" : "▼3",
+         "revenueChangePct" : -29.98,
+         "revenueUsd" : 1375485
+      },
+      {
+         "company" : "Joy Net Games",
+         "game" : "갓깨비 키우기-999뽑기 증정",
+         "rank" : 7,
+         "rankChange" : "▲2",
+         "revenueChangePct" : 32.11,
+         "revenueUsd" : 1063857
+      },
+      {
+         "company" : "Roblox",
+         "game" : "Roblox",
+         "rank" : 8,
+         "rankChange" : "▼6",
+         "revenueChangePct" : -59.68,
+         "revenueUsd" : 923652
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 9,
+         "rankChange" : "▼1",
+         "revenueChangePct" : 3.71,
+         "revenueUsd" : 866999
+      },
+      {
+         "company" : "Leniu",
+         "game" : "I9: 인페르노 나인 - 만국 총력전",
+         "rank" : 10,
+         "rankChange" : "▼3",
+         "revenueChangePct" : -11.44,
+         "revenueUsd" : 790120
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-05-24",
+      "month" : 5,
+      "startDate" : "2025-05-18",
+      "week" : 4,
+      "year" : 2025
+   }
+}

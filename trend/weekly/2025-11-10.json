@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_11월_4주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NEXON",
+         "game" : "메이플 키우기",
+         "rank" : 1,
+         "rankChange" : null,
+         "revenueChangePct" : 4079.24,
+         "revenueUsd" : 4998596
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 2,
+         "rankChange" : null,
+         "revenueChangePct" : 15.99,
+         "revenueUsd" : 3704620
+      },
+      {
+         "company" : "FUNFLY",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : null,
+         "revenueChangePct" : -18.32,
+         "revenueUsd" : 3515336
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 4,
+         "rankChange" : null,
+         "revenueChangePct" : -62.3,
+         "revenueUsd" : 2701339
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "뱀피르",
+         "rank" : 5,
+         "rankChange" : null,
+         "revenueChangePct" : -3.69,
+         "revenueUsd" : 2275018
+      },
+      {
+         "company" : "Florere Game",
+         "game" : "라스트 Z: 서바이벌 슈터",
+         "rank" : 6,
+         "rankChange" : null,
+         "revenueChangePct" : 20.09,
+         "revenueUsd" : 1542529
+      },
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 7,
+         "rankChange" : null,
+         "revenueChangePct" : -17.31,
+         "revenueUsd" : 1422214
+      },
+      {
+         "company" : "Level Infinite",
+         "game" : "승리의 여신 니케",
+         "rank" : 8,
+         "rankChange" : null,
+         "revenueChangePct" : -1.06,
+         "revenueUsd" : 1320917
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 9,
+         "rankChange" : null,
+         "revenueChangePct" : 88.32,
+         "revenueUsd" : 1081844
+      },
+      {
+         "company" : "Century Games",
+         "game" : "킹샷",
+         "rank" : 10,
+         "rankChange" : null,
+         "revenueChangePct" : -21.82,
+         "revenueUsd" : 1017414
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-11-16",
+      "month" : 11,
+      "startDate" : "2025-11-10",
+      "week" : 2,
+      "year" : 2025
+   }
+}

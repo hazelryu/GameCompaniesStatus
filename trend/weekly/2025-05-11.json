@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_5월_4주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : "-",
+         "revenueChangePct" : -36.05,
+         "revenueUsd" : 5150299
+      },
+      {
+         "company" : "Roblox",
+         "game" : "Roblox",
+         "rank" : 2,
+         "rankChange" : "▲3",
+         "revenueChangePct" : 15.26,
+         "revenueUsd" : 2290848
+      },
+      {
+         "company" : "NEXON",
+         "game" : "마비노기 모바일",
+         "rank" : 3,
+         "rankChange" : "-",
+         "revenueChangePct" : -35.31,
+         "revenueUsd" : 1964351
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 4,
+         "rankChange" : "▼2",
+         "revenueChangePct" : -53.11,
+         "revenueUsd" : 1825913
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "RF 온라인 넥스트",
+         "rank" : 5,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -33.03,
+         "revenueUsd" : 1341990
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워; 서바이벌",
+         "rank" : 6,
+         "rankChange" : "-",
+         "revenueChangePct" : -38.89,
+         "revenueUsd" : 1125285
+      },
+      {
+         "company" : "Leniu",
+         "game" : "I9: 인페르노 나인 - 만국 총력전",
+         "rank" : 7,
+         "rankChange" : "▲2",
+         "revenueChangePct" : -22.7,
+         "revenueUsd" : 892219
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 8,
+         "rankChange" : "▲3",
+         "revenueChangePct" : -13.78,
+         "revenueUsd" : 835958
+      },
+      {
+         "company" : "Joy Net Games",
+         "game" : "갓깨비 키우기-999뽑기 증정",
+         "rank" : 9,
+         "rankChange" : "▲1",
+         "revenueChangePct" : -19.88,
+         "revenueUsd" : 805264
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 10,
+         "rankChange" : "▼2",
+         "revenueChangePct" : -49.17,
+         "revenueUsd" : 655051
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-05-17",
+      "month" : 5,
+      "startDate" : "2025-05-11",
+      "week" : 3,
+      "year" : 2025
+   }
+}

@@ -1,0 +1,91 @@
+{
+   "gpRevenueTop10" : [
+      {
+         "company" : "Joy Net Games",
+         "game" : "버섯커 키우기",
+         "rank" : 1,
+         "rankChange" : 1,
+         "revenueChangePct" : 190.5,
+         "revenueUsd" : 14989288
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 2,
+         "rankChange" : -1,
+         "revenueChangePct" : -23.37,
+         "revenueUsd" : 7606715
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : 2,
+         "revenueChangePct" : 73.33,
+         "revenueUsd" : 4439700
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 4,
+         "rankChange" : -1,
+         "revenueChangePct" : 19.62,
+         "revenueUsd" : 3905206
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 5,
+         "rankChange" : 1,
+         "revenueChangePct" : 84.21,
+         "revenueUsd" : 3389715
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 6,
+         "rankChange" : -2,
+         "revenueChangePct" : 13.46,
+         "revenueUsd" : 2959381
+      },
+      {
+         "company" : "Roblox",
+         "game" : "로블록스",
+         "rank" : 7,
+         "rankChange" : 11,
+         "revenueChangePct" : 292.11,
+         "revenueUsd" : 2687043
+      },
+      {
+         "company" : "Webzen",
+         "game" : "뮤 모나크",
+         "rank" : 8,
+         "rankChange" : 1,
+         "revenueChangePct" : 71.22,
+         "revenueUsd" : 2154482
+      },
+      {
+         "company" : "NEXON",
+         "game" : "FC 모바일",
+         "rank" : 9,
+         "rankChange" : 4,
+         "revenueChangePct" : 90.91,
+         "revenueUsd" : 1952246
+      },
+      {
+         "company" : "Supercell",
+         "game" : "브롤스타즈",
+         "rank" : 10,
+         "rankChange" : -2,
+         "revenueChangePct" : 31.02,
+         "revenueUsd" : 1701745
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-02-17",
+      "month" : 2,
+      "startDate" : "2024-02-11",
+      "week" : 3,
+      "year" : 2024
+   }
+}

@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_8월_3주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 1,
+         "rankChange" : 1,
+         "revenueChangePct" : 50.98,
+         "revenueUsd" : 5675983
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 2,
+         "rankChange" : -1,
+         "revenueChangePct" : -38.02,
+         "revenueUsd" : 4862695
+      },
+      {
+         "company" : "Onefun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : 1,
+         "revenueChangePct" : -5.36,
+         "revenueUsd" : 2117038
+      },
+      {
+         "company" : "Kakao",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 4,
+         "rankChange" : 2,
+         "revenueChangePct" : 28.03,
+         "revenueUsd" : 1910564
+      },
+      {
+         "company" : "Roblox",
+         "game" : "Roblox",
+         "rank" : 5,
+         "rankChange" : 3,
+         "revenueChangePct" : 32.78,
+         "revenueUsd" : 1551645
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "세븐나이츠 리버스",
+         "rank" : 6,
+         "rankChange" : 1,
+         "revenueChangePct" : -11.35,
+         "revenueUsd" : 1173237
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "RF 온라인 넥스트",
+         "rank" : 7,
+         "rankChange" : 2,
+         "revenueChangePct" : 12.5,
+         "revenueUsd" : 1104598
+      },
+      {
+         "company" : "Tanwan",
+         "game" : "열혈강호: 귀환",
+         "rank" : 8,
+         "rankChange" : 0,
+         "revenueChangePct" : null,
+         "revenueUsd" : 1051155
+      },
+      {
+         "company" : "NEXON",
+         "game" : "마비노기 모바일",
+         "rank" : 9,
+         "rankChange" : -6,
+         "revenueChangePct" : -59.56,
+         "revenueUsd" : 981828
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 10,
+         "rankChange" : 0,
+         "revenueChangePct" : -2.71,
+         "revenueUsd" : 911391
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-08-16",
+      "month" : 8,
+      "startDate" : "2025-08-10",
+      "week" : 2,
+      "year" : 2025
+   }
+}

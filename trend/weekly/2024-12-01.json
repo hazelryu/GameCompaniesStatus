@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "24년_12월_2주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 1,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 80.16,
+         "revenueUsd" : 8912817
+      },
+      {
+         "company" : "First Fun",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 2,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -24.68,
+         "revenueUsd" : 4145096
+      },
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 3,
+         "rankChange" : "▲5",
+         "revenueChangePct" : 142.45,
+         "revenueUsd" : 2970128
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 4,
+         "rankChange" : "▼1",
+         "revenueChangePct" : 6.74,
+         "revenueUsd" : 2343220
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지2M",
+         "rank" : 5,
+         "rankChange" : "▲2",
+         "revenueChangePct" : 87.05,
+         "revenueUsd" : 2300944
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지W",
+         "rank" : 6,
+         "rankChange" : "▼2",
+         "revenueChangePct" : -18.03,
+         "revenueUsd" : 1663118
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 7,
+         "rankChange" : "▼1",
+         "revenueChangePct" : -0.38,
+         "revenueUsd" : 1325077
+      },
+      {
+         "company" : "Habby",
+         "game" : "카피바라 Go!",
+         "rank" : 8,
+         "rankChange" : "▼3",
+         "revenueChangePct" : -7.37,
+         "revenueUsd" : 1306869
+      },
+      {
+         "company" : "Habby",
+         "game" : "궁수의 전설2",
+         "rank" : 9,
+         "rankChange" : "▲11",
+         "revenueChangePct" : 140.88,
+         "revenueUsd" : 1151619
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 10,
+         "rankChange" : "▲1",
+         "revenueChangePct" : 21.63,
+         "revenueUsd" : 1057782
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2024-12-07",
+      "month" : 12,
+      "startDate" : "2024-12-01",
+      "week" : 1,
+      "year" : 2024
+   }
+}

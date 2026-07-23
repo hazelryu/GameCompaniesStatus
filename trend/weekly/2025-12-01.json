@@ -1,0 +1,92 @@
+{
+   "filenameHint" : "25년_12월_2주차.xlsx",
+   "gpRevenueTop10" : [
+      {
+         "company" : "NEXON",
+         "game" : "메이플 키우기",
+         "rank" : 1,
+         "rankChange" : null,
+         "revenueChangePct" : 0.95,
+         "revenueUsd" : 6312814
+      },
+      {
+         "company" : "NCSOFT",
+         "game" : "리니지M",
+         "rank" : 2,
+         "rankChange" : null,
+         "revenueChangePct" : 206.13,
+         "revenueUsd" : 3794115
+      },
+      {
+         "company" : "FUNFLY",
+         "game" : "라스트 워: 서바이벌",
+         "rank" : 3,
+         "rankChange" : null,
+         "revenueChangePct" : -2.03,
+         "revenueUsd" : 2637524
+      },
+      {
+         "company" : "Century Games",
+         "game" : "WOS: 화이트아웃 서바이벌",
+         "rank" : 4,
+         "rankChange" : null,
+         "revenueChangePct" : -33.04,
+         "revenueUsd" : 2516572
+      },
+      {
+         "company" : "Netmarble",
+         "game" : "뱀피르",
+         "rank" : 5,
+         "rankChange" : null,
+         "revenueChangePct" : 8.44,
+         "revenueUsd" : 1617772
+      },
+      {
+         "company" : "Florere Game",
+         "game" : "라스트 Z: 서바이벌 슈터",
+         "rank" : 6,
+         "rankChange" : null,
+         "revenueChangePct" : -23.09,
+         "revenueUsd" : 1569033
+      },
+      {
+         "company" : "Century Games",
+         "game" : "킹샷",
+         "rank" : 7,
+         "rankChange" : null,
+         "revenueChangePct" : -12.98,
+         "revenueUsd" : 1332176
+      },
+      {
+         "company" : "Roblox Corporation",
+         "game" : "Roblox",
+         "rank" : 8,
+         "rankChange" : null,
+         "revenueChangePct" : -0.2,
+         "revenueUsd" : 1066857
+      },
+      {
+         "company" : "Dream Games",
+         "game" : "로얄 매치",
+         "rank" : 9,
+         "rankChange" : null,
+         "revenueChangePct" : -3.69,
+         "revenueUsd" : 854516
+      },
+      {
+         "company" : "Kakao Games",
+         "game" : "오딘: 발할라 라이징",
+         "rank" : 10,
+         "rankChange" : null,
+         "revenueChangePct" : 27.53,
+         "revenueUsd" : 851341
+      }
+   ],
+   "truePeriod" : {
+      "endDate" : "2025-12-07",
+      "month" : 12,
+      "startDate" : "2025-12-01",
+      "week" : 1,
+      "year" : 2025
+   }
+}
