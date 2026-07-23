@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-23",
+  "weekday": "목",
+  "kicker": "한국 중심 + 글로벌",
+  "overview": "한국 게임업계는 이번 주 해외 자본에 의한 경영권 재편 이슈가 두드러졌다. 카카오게임즈 경영권이 라인야후(소프트뱅크 계열)로 넘어가고, 위메이드 박관호 의장이 보유 지분 전량을 알리바바 계열 투자사 네오펄스에 매각하기로 하면서, 국내 게임사에 대한 해외 자본의 영향력이 단순 지분투자를 넘어 경영권 확보로 확대되는 모습이다. 신작 시장은 활발했다 — 넥슨은 오늘(7/23) 빌리빌리 개발 서브컬처 RPG '히간: 이루실'을 신규 퍼블리싱 브랜드 '셀렉트 올'로 정식 출시했고, 컴투스홀딩스의 '페이딩 에코', 인디 경영시뮬 '조용한 장사'도 이번 주 출시선을 넘었다. 모바일 차트에서는 '오딘: 발할라 라이징'이 구글플레이 매출 1위를 지키는 가운데 아이온2, 리니지M 등이 상위권을 유지 중이다. 글로벌 시장에서는 스코플리(사우디 국부펀드 사비게임즈 산하)의 룸게임즈 10억 달러 인수 등 2분기 게임업계 M&A가 23억 달러 규모로 집계됐고, EA의 550억 달러 비공개 전환 딜은 CFIUS 심사 지연으로 교착 상태다.",
+  "sections": [
+    {
+      "title": "한국 M&A · 투자 · 비즈니스",
+      "items": [
+        { "html": "<b>카카오게임즈, 경영권 라인야후로 이전.</b> 카카오가 수익성 악화를 이유로 경영권을 넘겼으며 '오딘: 발할라 라이징' 등 흥행 IP와 동남아 퍼블리싱 인프라가 핵심 자산이다. <a href=\"http://news.bizwatch.co.kr/article/mobile/2026/07/06/0015\">Bizwatch</a>" },
+        { "html": "<b>위메이드 박관호 의장, 지분 전량 알리바바 계열 네오펄스에 매각.</b> 국내 보도 기준 약 9,200억 원, 해외 M&A 리포트 기준 약 5억 9,100만 달러로 2분기 최대 공개 지분매각 거래로 집계됐다. '미르의전설2' IP의 중국 시장 영향력이 배경이다. <a href=\"http://news.bizwatch.co.kr/article/mobile/2026/07/06/0015\">Bizwatch</a> / <a href=\"https://respawn.outlookindia.com/gaming/gaming-news/q2-2026-gaming-industry-ma-reaches-23b-amid-mid-market-boom\">Outlook Respawn</a>" },
+        { "html": "<b>넷마블·크래프톤·시프트업 등, 텐센트發 경영권 리스크 우려.</b> 텐센트가 2대주주인 이들 게임사에 외국자본 추가 지분매입에 따른 경영권 리스크가 업계 우려로 제기됐다. <a href=\"https://www.getnews.co.kr/news/articleView.html?idxno=874617\">Getnews</a>" }
+      ]
+    },
+    {
+      "title": "한국 신작 출시 & 업데이트",
+      "items": [
+        { "html": "<b>넥슨, '히간: 이루실' 오늘(7/23) 정식 출시.</b> 빌리빌리 개발 서브컬처 수집형 3D RPG로, 신규 퍼블리싱 브랜드 '셀렉트 올'의 첫 타이틀이다. 3D 필드 전투와 실시간 카드 덱빌딩을 결합한 하이브리드 전투가 특징. <a href=\"https://www.gametoc.co.kr/news/articleView.html?idxno=109948\">게임톡</a>" },
+        { "html": "<b>컴투스홀딩스, '페이딩 에코' 7/22 출시.</b> 프랑스 뉴테일즈 산하 에메테리아 스튜디오 개발 액션어드벤처, 스팀·에픽게임즈 아시아 퍼블리싱. <a href=\"https://www.khgames.co.kr/news/articleView.html?idxno=306563\">경향게임스</a>" },
+        { "html": "<b>인디 경영시뮬 '조용한 장사', 오늘(7/23) 스팀 얼리액세스.</b> 암시장 사업의 생산·유통·자금세탁 과정을 지휘하는 컨셉, 협동 플레이 지원. <a href=\"https://www.khgames.co.kr/news/articleView.html?idxno=306523\">경향게임스</a>" },
+        { "html": "<b>라인게임즈 '엠버 앤 블레이드', 유나이트 서울 2026 참가.</b> 유니티 엔진 기반 대규모 전투 최적화 노하우 공개, PS5 출시 확정·4분기 PC 얼리액세스 예정. <a href=\"https://www.khgames.co.kr/news/articleView.html?idxno=306566\">경향게임스</a>" }
+      ]
+    },
+    {
+      "title": "글로벌 동향",
+      "items": [
+        { "html": "<b>2026년 2분기 세계 게임업계 M&A, 23억 달러(54건) 집계.</b> 팬데믹 이후 최대 수준의 딜 활동이며, 1억 달러 이상 중형 딜 증가가 특징. <a href=\"https://respawn.outlookindia.com/gaming/gaming-news/q2-2026-gaming-industry-ma-reaches-23b-amid-mid-market-boom\">Outlook Respawn</a>" },
+        { "html": "<b>스코플리, 룸게임즈 10억 달러에 인수 완료.</b> 사우디 국부펀드 사비게임즈 산하 스코플리의 2분기 최대 규모 거래. <a href=\"https://respawn.outlookindia.com/gaming/gaming-news/q2-2026-gaming-industry-ma-reaches-23b-amid-mid-market-boom\">Outlook Respawn</a>" },
+        { "html": "<b>EA 550억 달러 비공개 전환 딜, CFIUS 심사로 교착.</b> 사우디 PIF·실버레이크·어피니티 파트너스 컨소시엄의 EA 인수(주당 210달러)는 주주·반독점 심사는 통과했으나 미 CFIUS 국가안보 심사가 9월 28일로 연장됐다. <a href=\"https://www.techtimes.com/articles/320848/20260717/ea-buyout-clears-eu-subsidy-gate-us-national-security-review-runs-late-september.htm\">Tech Times</a>" }
+      ]
+    }
+  ],
+  "mobileRanking": {
+    "meta": "기준: 2026년 7월 4주차(네이버·구글 검색 빅데이터 기반 인기 순위) · 출처: <a href=\"https://trees.gamemeca.com/ranking.php\">게임메카 국민트리</a> — 모바일인덱스 실시간 매출 차트는 로그인 기반으로 자동 수집 불가하여 검색 빅데이터 기반 순위로 대체. 참고로 구글플레이 매출 기준 '오딘: 발할라 라이징'이 7/13 기준 매출 1위(<a href=\"https://www.newspim.com/news/view/20260713001070\">뉴스핌</a>).",
+    "rows": [
+      { "rank": 1, "game": "아이온2", "note": "" },
+      { "rank": 2, "game": "ROBLOX", "note": "" },
+      { "rank": 3, "game": "리니지M", "note": "" },
+      { "rank": 4, "game": "솔: 인챈트", "note": "" },
+      { "rank": 5, "game": "마비노기 모바일", "note": "" },
+      { "rank": 6, "game": "오딘: 발할라 라이징", "note": "구글플레이 매출 1위(7/13 기준)" },
+      { "rank": 7, "game": "승리의 여신: 니케", "note": "" },
+      { "rank": 8, "game": "메이플 키우기", "note": "" },
+      { "rank": 9, "game": "포켓몬고", "note": "" },
+      { "rank": 10, "game": "포켓몬 챔피언스", "note": "" }
+    ]
+  }
+}
